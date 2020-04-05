@@ -135,7 +135,7 @@ public class TextFileInterpreter implements Film {
     public static void main(String[] args) {
         File rep = new File("t");
         rep.mkdir();
-        TextFileInterpreter film = new TextFileInterpreter("/teqzdst/euler-house.txt");
+        TextFileInterpreter film = new TextFileInterpreter("euler-house.txt");
         Films.projeter(film);
         film.rembobiner();
         try {
