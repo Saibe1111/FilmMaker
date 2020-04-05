@@ -11,7 +11,115 @@ a
           
 
 \newframe
-b         
+          
+ a        
+          
+          
+          
+          
+          
+          
+          
+          
+
+\newframe
+          
+          
+  a       
+          
+          
+          
+          
+          
+          
+          
+
+\newframe
+          
+          
+          
+   a      
+          
+          
+          
+          
+          
+          
+
+\newframe
+          
+          
+          
+          
+    a     
+          
+          
+          
+          
+          
+
+\newframe
+          
+          
+          
+          
+          
+     a    
+          
+          
+          
+          
+
+\newframe
+          
+          
+          
+          
+          
+          
+      a   
+          
+          
+          
+
+\newframe
+          
+          
+          
+          
+          
+          
+          
+       a  
+          
+          
+
+\newframe
+          
+          
+          
+          
+          
+          
+          
+          
+        a 
+          
+
+\newframe
+          
+          
+          
+          
+          
+          
+          
+          
+          
+         a
+
+\newframe
+a         
           
           
           
@@ -23,20 +131,8 @@ b
           
 
 \newframe
-c         
           
-          
-          
-          
-          
-          
-          
-          
-          
-
-\newframe
-d         
-          
+ a        
           
           
           
@@ -47,21 +143,9 @@ d
           
 
 \newframe
-e         
           
           
-          
-          
-          
-          
-          
-          
-          
-
-\newframe
-f         
-          
-          
+  a       
           
           
           
@@ -71,22 +155,10 @@ f
           
 
 \newframe
-g         
           
           
           
-          
-          
-          
-          
-          
-          
-
-\newframe
-h         
-          
-          
-          
+   a      
           
           
           
@@ -95,23 +167,11 @@ h
           
 
 \newframe
-i         
           
           
           
           
-          
-          
-          
-          
-          
-
-\newframe
-j         
-          
-          
-          
-          
+    a     
           
           
           
@@ -119,55 +179,30 @@ j
           
 
 \newframe
-k         
           
           
           
           
           
-          
-          
-          
-          
-
-\newframe
-l         
-          
-          
-          
-          
-          
+     a    
           
           
           
           
 
 \newframe
-m         
           
           
           
           
           
           
-          
-          
-          
-
-\newframe
-n         
-          
-          
-          
-          
-          
-          
+      a   
           
           
           
 
 \newframe
-o         
           
           
           
@@ -175,23 +210,11 @@ o
           
           
           
-          
-          
-
-\newframe
-p         
-          
-          
-          
-          
-          
-          
-          
+       a  
           
           
 
 \newframe
-q         
           
           
           
@@ -200,22 +223,10 @@ q
           
           
           
-          
-
-\newframe
-r         
-          
-          
-          
-          
-          
-          
-          
-          
+        a 
           
 
 \newframe
-s         
           
           
           
@@ -225,15 +236,6 @@ s
           
           
           
+         a
 
 \newframe
-t         
-          
-          
-          
-          
-          
-          
-          
-          
-          

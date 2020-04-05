@@ -2,30 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf52cac8-9fa0-4a0c-8524-79bfb0e18dc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Sebastien.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/decompte.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duke-cm.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/euler-house.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fou.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fouSave.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gym.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/joconde-anim.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marche.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Film.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Films.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/LaDiagonaleDuFou.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmColler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmEncadrement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmExtrait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmIncruster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmRépéter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reproductioneuler-house.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FilmMaker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FilmMaker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fou.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fou.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fouSave.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/optional/LaDiagonaleDuFou.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/optional/LaDiagonaleDuFou.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/optional/TextFileInterpreterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/LaDiagonaleDuFou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/LaDiagonaleDuFou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreterTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +25,8 @@
         <option value="Interface" />
         <option value="UML Class" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,6 +67,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JAVA\git\FilmMaker\src\fr\cuvellier\film_maker\film" />
     </key>
   </component>
   <component name="RunManager" selected="Application.TextFileInterpreter">
@@ -149,30 +139,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586041363904" />
-    <state width="1037" height="1279" key="GridCell.Tab.0.bottom" timestamp="1586099173565">
+    <state width="1037" height="497" key="GridCell.Tab.0.bottom" timestamp="1586126440896">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="1279" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1586099173565" />
+    <state width="1037" height="497" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1586126440896" />
     <state width="1877" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586040807483" />
-    <state width="1037" height="1279" key="GridCell.Tab.0.center" timestamp="1586099173565">
+    <state width="1037" height="497" key="GridCell.Tab.0.center" timestamp="1586126440895">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="1279" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1586099173565" />
+    <state width="1037" height="497" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1586126440895" />
     <state width="1877" height="202" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586040807483" />
-    <state width="1037" height="1279" key="GridCell.Tab.0.left" timestamp="1586099173565">
+    <state width="1037" height="497" key="GridCell.Tab.0.left" timestamp="1586126440895">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="1279" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1586099173565" />
+    <state width="1037" height="497" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1586126440895" />
     <state width="1877" height="202" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586040807483" />
-    <state width="1037" height="1279" key="GridCell.Tab.0.right" timestamp="1586099173565">
+    <state width="1037" height="497" key="GridCell.Tab.0.right" timestamp="1586126440896">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="1279" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1586099173565" />
+    <state width="1037" height="497" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1586126440896" />
     <state width="1877" height="202" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586040807483" />
     <state x="457" y="175" width="1085" height="715" key="SettingsEditor" timestamp="1586038040358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="457" y="175" width="1085" height="715" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586038040358" />
+    <state x="261" y="681" width="540" height="540" key="StructurePopup" timestamp="1586122118692">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="261" y="681" width="540" height="540" key="StructurePopup/0.0.1080.1880@0.0.1080.1880" timestamp="1586122118692" />
     <state x="245" y="828" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586094806941">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>

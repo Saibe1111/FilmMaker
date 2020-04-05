@@ -3,21 +3,32 @@ package fr.cuvellier.film_maker.film.optional;
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * @author Sebastien CUVELLIER
+ * @version 2.0 - 06/04/2020
+ */
 public class TextFileInterpreter implements Film {
-    private ArrayList<String> ligneFilm;
+    private ArrayList<String[]> images;
     private int hauteur;
     private int largeur;
-    private int nombreImages;
     private String nom;
-    private int num;
+    private int marge;
+
+    public TextFileInterpreter(String nom, int marge) {
+        this(nom);
+        this.marge = marge;
+    }
 
     public TextFileInterpreter(String nom) {
-        ligneFilm = new ArrayList<>();
+        this.marge = 0;
+        this.images = new ArrayList<>();
         this.nom = nom;
         try {
             lire(nom);
@@ -26,45 +37,40 @@ public class TextFileInterpreter implements Film {
         }
     }
 
+    /**
+     * @see Film#hauteur()
+     */
     @Override
     public int hauteur() {
         return this.hauteur;
     }
 
+    /**
+     * @see Film#largeur()
+     */
     @Override
     public int largeur() {
         return this.largeur;
     }
 
+    /**
+     * @see Film#suivante(char[][])
+     */
     @Override
     public boolean suivante(char[][] écran) {
-
-
-//        while (!ligneFilm.isEmpty()){
-//            System.out.println( ligneFilm.get(0));
-//            ligneFilm.remove(0);
-//        }
-
-
-
-        if (num == nombreImages)
+        if (images.isEmpty())
             return false;
-        int traitement = num * hauteur ;
-        for(int i = 0; i < hauteur + 1; ++i){
-            char[] chars = ligneFilm.get(i).toCharArray();
-            ligneFilm.remove(i);
-            if(chars.length !=0)
-                for(int j = 0; j < largeur; ++j)
-                     //écran[i][j] = chars[j];
-                    System.out.print("[" + chars[j] + "] ");
-            System.out.println();
+        for (int i = 0; i < this.images.get(0).length - this.marge; ++i) {
+            char[] chars = this.images.get(0)[i].toCharArray();
+            écran[i] = chars;
         }
-        System.out.println(this.num);
-        ++this.num;
-
+        this.images.remove(0);
         return true;
     }
 
+    /**
+     * @see Film#rembobiner()
+     */
     @Override
     public void rembobiner() {
         try {
@@ -72,35 +78,68 @@ public class TextFileInterpreter implements Film {
         } catch (FileNotFoundException e) {
             System.out.println("le fichier est introuvable");
         }
-        num = 0;
     }
 
+    /**
+     * Permet de lire un fichier qui respecte les règles du format
+     *
+     * @param nom Nom du fichier a lire
+     * @throws FileNotFoundException Permet permet de dire si le fichier est introuvable
+     */
     private void lire(String nom) throws FileNotFoundException {
+        int cpt = 0;
         Scanner in = new Scanner(new FileInputStream(nom));
         Scanner ligne = new Scanner(in.nextLine());
         this.largeur = Integer.parseInt(ligne.next());
         this.hauteur = Integer.parseInt(ligne.next());
+        this.ajoutImage();
         ligne.close();
         while (in.hasNextLine()) {
             String ligneSuivante = in.nextLine();
-            if (ligneSuivante.equals("\\newframe"))
-                ++nombreImages;
-            else
-                ligneFilm.add(ligneSuivante);
+            if (ligneSuivante.equals("\\newframe")) {
+                this.ajoutImage();
+                cpt = 0;
+            } else {
+                this.images.get(this.images.size() - 1)[cpt] = ligneSuivante;
+                ++cpt;
+            }
         }
         in.close();
+        this.ImageDeFinVide();
     }
 
     /**
-     * La projection (puis la sauvegarde) d'un tel film.
+     * Permet d'ajouter la place pour une image dans la liste des images
+     */
+    private void ajoutImage() {
+        this.images.add(new String[this.hauteur + this.marge]);
+        Arrays.fill(images.get(this.images.size() - 1), " ");
+    }
+
+    /**
+     * Permet de regarder si la dernière image est vide pour la supprimer pour éviter une image vide de transition en cas d'assemblage
+     */
+    private void ImageDeFinVide() {
+        int cpt = 0;
+        for (int i = 0; i < this.hauteur + this.marge; ++i)
+            if (this.images.get(this.images.size() - 1)[i].equals(" "))
+                cpt++;
+        if (cpt == this.hauteur + this.marge)
+            this.images.remove(this.images.size() - 1);
+    }
+
+    /**
+     * Permet de générer un fichier txt.
+     * A SUPPRIMER POUR LE RENDU
      */
     public static void main(String[] args) {
-
-        TextFileInterpreter film = new TextFileInterpreter("fou.txt");
-        //Films.projeter(film);
-        //film.rembobiner();
+        File rep = new File("t");
+        rep.mkdir();
+        TextFileInterpreter film = new TextFileInterpreter("/teqzdst/euler-house.txt");
+        Films.projeter(film);
+        film.rembobiner();
         try {
-            Films.sauvegarder(film, "fouSave.txt");
+            Films.sauvegarder(film, ("Reproduction" + film.nom));
         } catch (FileNotFoundException e) {
             System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
         }

@@ -5,7 +5,6 @@ import fr.cuvellier.film_maker.film.Films;
 
 import java.io.FileNotFoundException;
 
-
 /**
  * Un exemple basique d'implémentation de l'interface Film.
  */
@@ -13,7 +12,7 @@ import java.io.FileNotFoundException;
 public class LaDiagonaleDuFou implements Film {
     private int num = 0;
     private static final int NB_IMAGES = 20;
-    char test = 'a';
+
     @Override
     public int hauteur() {
         return 10;
@@ -27,12 +26,9 @@ public class LaDiagonaleDuFou implements Film {
     @Override
     public boolean suivante(char[][] écran) {
         if (num == NB_IMAGES)
-           return false;
-        //écran[num % hauteur()][num % hauteur()] = 'a'; // un 'a' se balade sur
-        écran[0][0] = test;
-        test++;
+            return false;
+        écran[num % hauteur()][num % hauteur()] = 'a'; // un 'a' se balade sur
         // la diagonale
-        System.out.println(this.num);
         ++num;
         return true;
     }
@@ -40,7 +36,6 @@ public class LaDiagonaleDuFou implements Film {
     @Override
     public void rembobiner() {
         num = 0;
-        test = 'a';
     }
 
     /**
