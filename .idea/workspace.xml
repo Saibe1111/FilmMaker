@@ -1,20 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf52cac8-9fa0-4a0c-8524-79bfb0e18dc9" name="Default Changelist" comment="" />
+    <list default="true" id="bf52cac8-9fa0-4a0c-8524-79bfb0e18dc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Sebastien.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decompte.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duke-cm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/euler-house.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fou.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fouSave.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gym.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/joconde-anim.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marche.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Film.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Films.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/LaDiagonaleDuFou.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmColler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmEncadrement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmExtrait.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmIncruster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmRépéter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilmMaker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FilmMaker.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="UML Class" />
+        <option value="package-info" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1a4hanFmh5KUE1CYEY4lfYiIols" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BPO/TP-s9" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="fr.cuvellier.film_maker.film.optional" />
+      <recent name="fr.cuvellier.film_maker.test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TextFileInterpreter">
+    <configuration name="LaDiagonaleDuFou" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.film.optional.LaDiagonaleDuFou" />
+      <module name="FilmMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.cuvellier.film_maker.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextFileInterpreter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.film.optional.TextFileInterpreter" />
+      <module name="FilmMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.cuvellier.film_maker.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TextFileInterpreter" />
+        <item itemvalue="Application.LaDiagonaleDuFou" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -28,5 +128,112 @@
       <updated>1586000839359</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="595" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586093300276">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="0" y="595" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1586093300276" />
+    <state x="345" y="643" key="#com.intellij.ide.util.MemberChooser" timestamp="1586094593379">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="345" y="643" key="#com.intellij.ide.util.MemberChooser/0.0.1080.1880@0.0.1080.1880" timestamp="1586094593379" />
+    <state x="270" y="715" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586094797965">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="270" y="715" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1586094797965" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1586041363904">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586041363904" />
+    <state width="1037" height="1279" key="GridCell.Tab.0.bottom" timestamp="1586099173565">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="1279" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1586099173565" />
+    <state width="1877" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586040807483" />
+    <state width="1037" height="1279" key="GridCell.Tab.0.center" timestamp="1586099173565">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="1279" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1586099173565" />
+    <state width="1877" height="202" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586040807483" />
+    <state width="1037" height="1279" key="GridCell.Tab.0.left" timestamp="1586099173565">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="1279" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1586099173565" />
+    <state width="1877" height="202" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586040807483" />
+    <state width="1037" height="1279" key="GridCell.Tab.0.right" timestamp="1586099173565">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="1279" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1586099173565" />
+    <state width="1877" height="202" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586040807483" />
+    <state x="457" y="175" width="1085" height="715" key="SettingsEditor" timestamp="1586038040358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="457" y="175" width="1085" height="715" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586038040358" />
+    <state x="245" y="828" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586094806941">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="245" y="828" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1080.1880@0.0.1080.1880" timestamp="1586094806941" />
+    <state x="500" y="258" width="472" height="951" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586094905451">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="500" y="258" width="472" height="951" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1586094905451" />
+    <state x="342" y="95" key="new project wizard" timestamp="1586037343325">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="95" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1586037343325" />
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
   </component>
 </project>
