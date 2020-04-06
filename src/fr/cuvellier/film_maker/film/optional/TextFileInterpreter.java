@@ -133,13 +133,15 @@ public class TextFileInterpreter implements Film {
      * A SUPPRIMER POUR LE RENDU
      */
     public static void main(String[] args) {
-        TextFileInterpreter film = new TextFileInterpreter("euler-house.txt");
+
+        String nom = "euler-house.txt";
+        TextFileInterpreter film = new TextFileInterpreter(nom);
         Films.projeter(film);
         film.rembobiner();
         try {
-            Films.sauvegarder(film, ("Reproduction" + film.nom));
+            Films.sauvegarder(film, ("Reproduction" + nom));
         } catch (FileNotFoundException e) {
-            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
+            System.err.println("Le fichier n'a pas pu être créé.");
         }
     }
 }
