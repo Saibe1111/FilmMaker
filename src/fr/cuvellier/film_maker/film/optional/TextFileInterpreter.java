@@ -1,9 +1,7 @@
 package fr.cuvellier.film_maker.film.optional;
 
 import fr.cuvellier.film_maker.film.Film;
-import fr.cuvellier.film_maker.film.Films;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -12,7 +10,7 @@ import java.util.Scanner;
 
 /**
  * @author Sebastien CUVELLIER
- * @version 2.0 - 06/04/2020
+ * @version 2.1 - 06/04/2020
  */
 public class TextFileInterpreter implements Film {
     private ArrayList<String[]> images;
@@ -21,11 +19,21 @@ public class TextFileInterpreter implements Film {
     private String nom;
     private int marge;
 
+
+    /**
+     * Constructeur permetant d'initialiser le nom et la marge.
+     * @param nom nom du fichier à ouvrir
+     * @param marge marge si ligne sauté après chaque image.
+     */
     public TextFileInterpreter(String nom, int marge) {
         this(nom);
         this.marge = marge;
     }
 
+    /**
+     * Constructeur permetant d'initialiser le nom.
+     * @param nom nom du fichier à ouvrir
+     */
     public TextFileInterpreter(String nom) {
         this.marge = 0;
         this.images = new ArrayList<>();
@@ -128,20 +136,4 @@ public class TextFileInterpreter implements Film {
             this.images.remove(this.images.size() - 1);
     }
 
-    /**
-     * Permet de générer un fichier txt.
-     * A SUPPRIMER POUR LE RENDU
-     */
-    public static void main(String[] args) {
-
-        String nom = "euler-house.txt";
-        TextFileInterpreter film = new TextFileInterpreter(nom);
-        Films.projeter(film);
-        film.rembobiner();
-        try {
-            Films.sauvegarder(film, ("Reproduction" + nom));
-        } catch (FileNotFoundException e) {
-            System.err.println("Le fichier n'a pas pu être créé.");
-        }
-    }
 }
