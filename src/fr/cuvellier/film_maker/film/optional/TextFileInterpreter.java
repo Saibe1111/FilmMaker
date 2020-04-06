@@ -133,8 +133,6 @@ public class TextFileInterpreter implements Film {
      * A SUPPRIMER POUR LE RENDU
      */
     public static void main(String[] args) {
-        File rep = new File("t");
-        rep.mkdir();
         TextFileInterpreter film = new TextFileInterpreter("euler-house.txt");
         Films.projeter(film);
         film.rembobiner();
