@@ -10,8 +10,8 @@ class TextFileInterpreterTest {
 
     @Test
     void mainTEST() {
-        String nom = "euler-house.txt";
-        TextFileInterpreter film = new TextFileInterpreter(nom);
+        String nom = "gym.txt";
+        TextFileInterpreter film = new TextFileInterpreter(nom,0);
         Films.projeter(film);
         film.rembobiner();
         try {

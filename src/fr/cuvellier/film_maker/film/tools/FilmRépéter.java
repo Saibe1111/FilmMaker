@@ -56,7 +56,8 @@ public class FilmRépéter implements Film {
         if (!suivant) {
             --répétitionRestante;
             film.rembobiner();
-            film.suivante(écran);
+            if (répétitionRestante !=0)
+                film.suivante(écran);
         }
         return répétitionRestante != 0;
     }

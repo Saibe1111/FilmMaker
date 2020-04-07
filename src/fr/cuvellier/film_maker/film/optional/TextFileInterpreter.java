@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  * @author Sebastien CUVELLIER
- * @version 2.1 - 06/04/2020
+ * @version 2.3 - 08/04/2020
  */
 public class TextFileInterpreter implements Film {
     private ArrayList<String[]> images;
