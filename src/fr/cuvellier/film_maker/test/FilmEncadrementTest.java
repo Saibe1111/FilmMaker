@@ -3,20 +3,19 @@ package fr.cuvellier.film_maker.test;
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
 import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
-import fr.cuvellier.film_maker.film.tools.FilmColler;
+import fr.cuvellier.film_maker.film.tools.FilmEncadrement;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FilmCollerTest {
+class FilmEncadrementTest {
 
     @Test
     void mainTEST() {
-        Film film1 = new TextFileInterpreter("euler-house.txt");
         Film film2 = new TextFileInterpreter("euler-house.txt");
-        Film film = new FilmColler(film1,film2);
+        Film film = new FilmEncadrement(film2);
         Films.projeter(film);
         film.rembobiner();
         try {
@@ -25,6 +24,7 @@ class FilmCollerTest {
             System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
         }
     }
+
 
     @Test
     void hauteur() {
@@ -41,5 +41,4 @@ class FilmCollerTest {
     @Test
     void rembobiner() {
     }
-
 }

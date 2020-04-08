@@ -1,14 +1,9 @@
 package fr.cuvellier.film_maker.film;
 
 /**
- * Interface devant être respectée par tout film.
- *
- * Attention, pour qu'un film puisse être projeté ou sauvergardé (voir la classe
- * film.Outils), il doit être composé d'un nombre fini d'images. En conséquence,
- * la méthode suivante() doit nécessairement retourner false au bout d'un nombre
- * fini d'appels.
+ * @version 1.0 - 13/02/2020
+ * @author Denis Poitrenaud
  */
-
 public interface Film {
     /**
      * Indique la hauteur des images de ce film (en nombre de caractères).

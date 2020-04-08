@@ -5,9 +5,8 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 
 /**
- * Ensemble de méthodes de classe utilitaires pour la projection (sur System.in)
- * et la sauvegarde (dans un fichier) d'un film. Le format de fichier employé
- * pour la sauvegarde est compatible avec le player graphique.
+ * @version 1.0 - 13/02/2020
+ * @author Denis Poitrenaud
  */
 public class Films {
     /**

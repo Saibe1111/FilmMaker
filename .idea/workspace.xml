@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf52cac8-9fa0-4a0c-8524-79bfb0e18dc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FilmeCo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmCollerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/FilmEncadrementTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/FilmExtraitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reproductioneuler-house.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductioneuler-house.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gym.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilmeCo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FilmeCo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmColler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmColler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmRépéter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmRépéter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/FilmRépéterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/FilmRépéterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/TextFileInterpreterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/TextFileInterpreterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmColler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmColler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmRépéter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmRépéter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/FilmRépéterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/FilmRépéterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/TextFileInterpreterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/TextFileInterpreterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmEncadrement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmEncadrement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmExtrait.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmExtrait.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Films.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Films.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmEncadrement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmEncadrement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmExtrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmExtrait.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmIncruster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmIncruster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/FilmCollerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/FilmCollerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,7 @@
       <recent name="E:\JAVA\git\FilmMaker\src\fr\cuvellier\film_maker\film" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FilmRépéterTest.mainTest">
+  <component name="RunManager" selected="JUnit.FilmExtraitTest.mainTEST">
     <configuration name="FilmColler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.film.tools.FilmColler" />
       <module name="FilmMaker" />
@@ -90,6 +88,38 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilmEncadrementTest.mainTEST" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FilmMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.cuvellier.film_maker.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test" />
+      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.FilmEncadrementTest" />
+      <option name="METHOD_NAME" value="mainTEST" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilmExtraitTest.mainTEST" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FilmMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.cuvellier.film_maker.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test" />
+      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.FilmExtraitTest" />
+      <option name="METHOD_NAME" value="mainTEST" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,44 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextFileInterpreterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FilmMaker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.cuvellier.film_maker.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test" />
-      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.TextFileInterpreterTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextFileInterpreterTest.mainTEST" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FilmMaker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.cuvellier.film_maker.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test" />
-      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.TextFileInterpreterTest" />
-      <option name="METHOD_NAME" value="mainTEST" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FilmExtraitTest.mainTEST" />
+        <item itemvalue="JUnit.FilmEncadrementTest.mainTEST" />
         <item itemvalue="JUnit.FilmRépéterTest.mainTest" />
         <item itemvalue="JUnit.FilmRépéterTest" />
         <item itemvalue="Application.FilmColler" />
-        <item itemvalue="JUnit.TextFileInterpreterTest.mainTEST" />
-        <item itemvalue="JUnit.TextFileInterpreterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -191,11 +190,11 @@
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state x="0" y="595" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1586093300276" />
-    <state x="613" y="356" key="#com.intellij.ide.util.MemberChooser" timestamp="1586273924034">
+    <state x="613" y="356" key="#com.intellij.ide.util.MemberChooser" timestamp="1586363455893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="345" y="643" key="#com.intellij.ide.util.MemberChooser/0.0.1080.1880@0.0.1080.1880" timestamp="1586174049056" />
-    <state x="613" y="356" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586273924034" />
+    <state x="345" y="643" key="#com.intellij.ide.util.MemberChooser/0.0.1080.1880@0.0.1080.1880" timestamp="1586358982874" />
+    <state x="613" y="356" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586363455893" />
     <state x="270" y="715" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586094797965">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
@@ -205,26 +204,42 @@
     </state>
     <state x="416" y="497" key="FileChooserDialogImpl/0.0.1080.1880@0.0.1080.1880" timestamp="1586214525177" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586041363904" />
-    <state width="1037" height="611" key="GridCell.Tab.0.bottom" timestamp="1586300690134">
+    <state width="1037" height="662" key="GridCell.Tab.0.bottom" timestamp="1586362115121">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="611" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1586300690134" />
+    <state width="1037" height="662" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1586362115121" />
     <state width="1877" height="21" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586299757189" />
-    <state width="1037" height="611" key="GridCell.Tab.0.center" timestamp="1586300690134">
+    <state width="1037" height="662" key="GridCell.Tab.0.center" timestamp="1586362115121">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="611" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1586300690134" />
+    <state width="1037" height="662" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1586362115121" />
     <state width="1877" height="21" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586299757189" />
-    <state width="1037" height="611" key="GridCell.Tab.0.left" timestamp="1586300690134">
+    <state width="1037" height="662" key="GridCell.Tab.0.left" timestamp="1586362115121">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="611" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1586300690134" />
+    <state width="1037" height="662" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1586362115121" />
     <state width="1877" height="21" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586299757189" />
-    <state width="1037" height="611" key="GridCell.Tab.0.right" timestamp="1586300690134">
+    <state width="1037" height="662" key="GridCell.Tab.0.right" timestamp="1586362115121">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="611" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1586300690134" />
+    <state width="1037" height="662" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1586362115121" />
     <state width="1877" height="21" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586299757189" />
+    <state width="1037" height="662" key="GridCell.Tab.1.bottom" timestamp="1586362115121">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="662" key="GridCell.Tab.1.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1586362115121" />
+    <state width="1037" height="662" key="GridCell.Tab.1.center" timestamp="1586362115121">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="662" key="GridCell.Tab.1.center/0.0.1080.1880@0.0.1080.1880" timestamp="1586362115121" />
+    <state width="1037" height="662" key="GridCell.Tab.1.left" timestamp="1586362115121">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="662" key="GridCell.Tab.1.left/0.0.1080.1880@0.0.1080.1880" timestamp="1586362115121" />
+    <state width="1037" height="662" key="GridCell.Tab.1.right" timestamp="1586362115121">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="662" key="GridCell.Tab.1.right/0.0.1080.1880@0.0.1080.1880" timestamp="1586362115121" />
     <state x="457" y="175" width="1085" height="715" key="SettingsEditor" timestamp="1586038040358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -237,10 +252,10 @@
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state x="245" y="828" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1080.1880@0.0.1080.1880" timestamp="1586094806941" />
-    <state x="500" y="258" width="472" height="951" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586300878975">
+    <state x="500" y="258" width="472" height="951" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586359043798">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state x="500" y="258" width="472" height="951" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1586300878975" />
+    <state x="500" y="258" width="472" height="951" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1586359043798" />
     <state x="342" y="95" key="new project wizard" timestamp="1586037343325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
