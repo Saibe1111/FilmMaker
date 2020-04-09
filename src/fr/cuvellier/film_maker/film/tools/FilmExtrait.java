@@ -14,7 +14,7 @@ public class FilmExtrait implements Film {
     private int imageEnCour;
 
     /**
-     * Constructeur qui permet d'initialiser le film,la première image inclus et la dernière image inclus.
+     * Constructeur qui permet d'initialiser le film,la première image inclus et la dernière image inclus du film.
      * @param film Le film dont on veut un extrait
      * @param prmièreImage La première image que l'on veut pour notre nouveau film
      * @param dernièreImage La dernière image que l'on veut pour notre nouveau film
@@ -27,7 +27,7 @@ public class FilmExtrait implements Film {
     }
 
     /**
-     * Constructeur qui permet d'initialiser le film,la première image inclus et la dernière image inclus.
+     * Constructeur qui permet d'initialiser le film et  la dernière image inclus du film.
      * @param film Le film dont on veut un extrait
      * @param dernièreImage La dernière image que l'on veut pour notre nouveau film
      */

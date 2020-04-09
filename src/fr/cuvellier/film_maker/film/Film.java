@@ -5,9 +5,9 @@ package fr.cuvellier.film_maker.film;
  * @author Denis Poitrenaud
  */
 public interface Film {
+
     /**
      * Indique la hauteur des images de ce film (en nombre de caractères).
-     *
      * @return Hauteur minimale de l'écran pour pouvoir afficher les images de
      *         ce film.
      */
@@ -15,7 +15,6 @@ public interface Film {
 
     /**
      * Indique la largeur des images de ce film (en nombre de caractères).
-     *
      * @return largeur minimale de l'écran pour pouvoir afficher les images de
      *         ce film.
      */
@@ -23,9 +22,7 @@ public interface Film {
 
     /**
      * Obtenir l'image suivante (s'il y en a une).
-     *
-     * @param écran
-     *            L'écran où afficher l'image
+     * @param écran L'écran où afficher l'image
      * @return vrai Si l'image suivante a été affichée sur l'écran et faux si le
      *         film est terminé
      */

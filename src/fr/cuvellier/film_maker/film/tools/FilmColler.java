@@ -1,11 +1,6 @@
 package fr.cuvellier.film_maker.film.tools;
 
 import fr.cuvellier.film_maker.film.Film;
-import fr.cuvellier.film_maker.film.Films;
-import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
-
-import java.io.FileNotFoundException;
-
 
 /**
  * @author Sebastien CUVELLIER

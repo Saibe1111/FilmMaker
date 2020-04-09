@@ -12,9 +12,7 @@ public class Films {
     /**
      * Projette un film dans sa totalité sur System.in. Attention, la méthode ne
      * se termine pas si le film est infini.
-     *
-     * @param f
-     *            Le film devant être projeté.
+     * @param f Le film devant être projeté.
      */
     public static void projeter(Film f) {
         char[][] écran = getEcran(f);
@@ -27,13 +25,9 @@ public class Films {
 
     /**
      * Sauvegarder un film dans un fichier.
-     *
-     * @param f
-     *            Le film à sauvegarder.
-     * @param nom
-     *            le nom du fichier où sauvegarder le film.
-     * @throws FileNotFoundException
-     *             Si le nom du fichier ne permet pas de le créer.
+     * @param f Le film à sauvegarder.
+     * @param nom le nom du fichier où sauvegarder le film.
+     * @throws FileNotFoundException Si le nom du fichier ne permet pas de le créer.
      */
     public static void sauvegarder(Film f, String nom) throws FileNotFoundException {
         try (PrintWriter out = new PrintWriter(nom)) {
@@ -49,9 +43,7 @@ public class Films {
 
     /**
      * Construit un écran adapté à la projection d'un film.
-     *
-     * @param f
-     *            Le film pour lequel un écran doit être constuit.
+     * @param f Le film pour lequel un écran doit être constuit.
      * @return L'écran adapté au film.
      */
     public static char[][] getEcran(Film f) {
@@ -62,9 +54,7 @@ public class Films {
 
     /**
      * Efface un écran.
-     *
-     * @param écran
-     *            L'écran à effacer
+     * @param écran L'écran à effacer
      */
     public static void effacer(char[][] écran) {
         for (char[] ligne : écran)
@@ -73,9 +63,7 @@ public class Films {
 
     /**
      * Convertit en chaine de caractère un écran.
-     *
-     * @param écran
-     *            L'écran à convertir
+     * @param écran L'écran à convertir
      * @return La chaine correspondante à l'écran.
      */
     public static String toString(char[][] écran) {
@@ -87,9 +75,7 @@ public class Films {
 
     /**
      * Endort le programme pendant un temps donné.
-     *
-     * @param d
-     *            Le temps d'endormissement exprimé en seconde.
+     * @param d Le temps d'endormissement exprimé en seconde.
      */
     public static void pause(double d) {
         try {

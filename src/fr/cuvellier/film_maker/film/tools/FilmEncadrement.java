@@ -13,7 +13,7 @@ public class FilmEncadrement implements Film {
     private boolean bordure = false;
 
     /**
-     *
+     * Constructeur qui permet d'encardrer un film
      * @param film film que l'on veut encadrer.
      */
     public FilmEncadrement(Film film) {
