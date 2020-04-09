@@ -66,8 +66,6 @@ public class FilmExtrait implements Film {
             }
         }
         if (dernièreImage < imageEnCour) {
-            while (film.suivante(écran)) {
-            }
             return false;
         }
         ++this.imageEnCour;

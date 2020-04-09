@@ -81,6 +81,8 @@ public class TextFileInterpreter implements Film {
      */
     @Override
     public void rembobiner() {
+        while(!images.isEmpty())
+            this.images.remove(0);
         try {
             lire(nom);
         } catch (FileNotFoundException e) {
