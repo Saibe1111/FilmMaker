@@ -4,11 +4,7 @@ import fr.cuvellier.film_maker.film.Film;
 
 /**
  * @author Sebastien CUVELLIER
- * D’incrusterm un ﬁlm dans un ﬁl.
- * Le point d’incrustation sera d´esign´e par les num´eros de ligne et de colonne
- * que doit prendre le coin en haut `a gauche du ﬁlm devant ˆetre incrust´e
- * dans les images du ﬁlm ou` il est incrust´e.
- * @version 1.0 - 09/04/2020
+ * @version 2.0 - 10/04/2020
  */
 public class FilmIncruster implements Film {
     private Film filmBase;
@@ -16,7 +12,13 @@ public class FilmIncruster implements Film {
     private int colone;
     private int ligne;
 
-
+    /**
+     *
+     * @param filmBase film dans lequel on incruste un film
+     * @param filmAIncruster film que l'on incruste
+     * @param colone colone à laquel on incruste le film
+     * @param ligne ligne à laquel on incruste le film
+     */
     public FilmIncruster(Film filmBase, Film filmAIncruster, int colone, int ligne) {
         this.filmBase = filmBase;
         this.filmAIncruster = filmAIncruster;

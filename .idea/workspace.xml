@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf52cac8-9fa0-4a0c-8524-79bfb0e18dc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/FilmIncrusterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FilmeCo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FilmeCo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmIncruster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmIncruster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
