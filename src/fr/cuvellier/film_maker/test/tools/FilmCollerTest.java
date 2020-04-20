@@ -1,4 +1,4 @@
-package fr.cuvellier.film_maker.test;
+package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
@@ -10,23 +10,9 @@ import org.junit.jupiter.api.Test;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-class TextFileInterpreterTest {
-
-    @Test
-    void mainTEST() {
-        String nom = "gym.txt";
-        TextFileInterpreter film = new TextFileInterpreter(nom,0);
-        Films.projeter(film);
-        film.rembobiner();
-        try {
-            Films.sauvegarder(film, ("Reproduction" + nom));
-        } catch (FileNotFoundException e) {
-            System.err.println("Le fichier n'a pas pu être créé.");
-        }
-    }
-
+class FilmCollerTest {
     private Film film;
     private Film f;
 
@@ -54,7 +40,7 @@ class TextFileInterpreterTest {
 
     @Test
     void suivante() {
-
+        
     }
 
     @Test
@@ -84,4 +70,16 @@ class TextFileInterpreterTest {
                     assertEquals(chars[i][j], écran1[i][j]);
         }
     }
+
+
+//    @Test
+//    void mainTEST() {
+//        Films.projeter(film);
+//        film.rembobiner();
+//        try {
+//            Films.sauvegarder(film, "FilmeCo.txt");
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
+//        }
+//    }
 }

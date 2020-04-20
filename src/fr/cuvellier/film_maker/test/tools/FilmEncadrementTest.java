@@ -1,10 +1,9 @@
-package fr.cuvellier.film_maker.test;
+package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
 import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
-import fr.cuvellier.film_maker.film.tools.FilmColler;
-import fr.cuvellier.film_maker.film.tools.FilmIncruster;
+import fr.cuvellier.film_maker.film.tools.FilmEncadrement;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,21 +12,7 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FilmIncrusterTest {
-
-    @Test
-    void mainTEST() {
-        Film film1 = new TextFileInterpreter("decompte.txt");
-        Film film2 = new TextFileInterpreter("euler-house.txt");
-        Film film = new FilmIncruster(film1,film2, 1,1);
-        Films.projeter(film);
-        film.rembobiner();
-        try {
-            Films.sauvegarder(film, "FilmeCo.txt");
-        } catch (FileNotFoundException e) {
-            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
-        }
-    }
+class FilmEncadrementTest {
 
     private Film film;
     private Film f;
@@ -35,23 +20,21 @@ class FilmIncrusterTest {
     @BeforeEach
     void setUp() {
         Film film1 = new TextFileInterpreter("decompte.txt");
-        Film film2 = new TextFileInterpreter("joconde-anim.txt");
-         film = new FilmIncruster(film1,film2, 1,1);
-        Film f1 = new TextFileInterpreter("marche.txt");
+         film = new FilmEncadrement(film1);
         Film f2 = new TextFileInterpreter("gym.txt");
-        f = new FilmIncruster(f1,f2, 18,18);
+        f = new FilmEncadrement(f2);
     }
 
     @Test
     void hauteur() {
-        assertEquals(52, f.hauteur());
-        assertEquals(105, film.hauteur());
+        assertEquals(58, f.hauteur());
+        assertEquals(113, film.hauteur());
     }
 
     @Test
     void largeur() {
-        assertEquals(80, f.largeur());
-        assertEquals(150, film.largeur());
+        assertEquals(83, f.largeur());
+        assertEquals(158, film.largeur());
     }
 
     @Test
@@ -86,4 +69,17 @@ class FilmIncrusterTest {
                     assertEquals(chars[i][j], écran1[i][j]);
         }
     }
+
+//    @Test
+//    void mainTEST() {
+//        Film film2 = new TextFileInterpreter("euler-house.txt");
+//        Film film = new FilmEncadrement(film2);
+//        Films.projeter(film);
+//        film.rembobiner();
+//        try {
+//            Films.sauvegarder(film, "FilmeCo.txt");
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
+//        }
+//    }
 }

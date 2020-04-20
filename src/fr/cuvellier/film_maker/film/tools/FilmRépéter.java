@@ -4,7 +4,7 @@ import fr.cuvellier.film_maker.film.Film;
 
 /**
  * @author Sebastien CUVELLIER
- * @version 1.0 - 06/04/2020
+ * @version 1.1 - 20/04/2020
  */
 public class FilmRépéter implements Film {
     private int nombreDeRépétition;
@@ -59,7 +59,7 @@ public class FilmRépéter implements Film {
             if (répétitionRestante !=0)
                 film.suivante(écran);
         }
-        return répétitionRestante != 0;
+        return répétitionRestante > 0;
     }
 
     /**

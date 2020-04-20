@@ -1,4 +1,4 @@
-package fr.cuvellier.film_maker.test;
+package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
@@ -14,19 +14,6 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FilmExtraitTest {
-
-    @Test
-    void mainTEST() {
-        Film film1 = new TextFileInterpreter("euler-house.txt");
-        Film film = new FilmExtrait(film1,2,4);
-        Films.projeter(film);
-        film.rembobiner();
-        try {
-            Films.sauvegarder(film, "FilmeCo.txt");
-        } catch (FileNotFoundException e) {
-            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
-        }
-    }
 
     private Film film;
     private Film f;
@@ -83,4 +70,20 @@ class FilmExtraitTest {
                     assertEquals(chars[i][j], écran1[i][j]);
         }
     }
+
+
+//    @Test
+//    void mainTEST() {
+//        Film film1 = new TextFileInterpreter("euler-house.txt");
+//        Film film = new FilmExtrait(film1,2,4);
+//        Films.projeter(film);
+//        film.rembobiner();
+//        try {
+//            Films.sauvegarder(film, "FilmeCo.txt");
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
+//        }
+//    }
+
+
 }

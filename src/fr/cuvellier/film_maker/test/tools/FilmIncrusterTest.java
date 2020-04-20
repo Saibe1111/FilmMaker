@@ -1,10 +1,9 @@
-package fr.cuvellier.film_maker.test;
+package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
 import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
-import fr.cuvellier.film_maker.film.tools.FilmColler;
-import fr.cuvellier.film_maker.film.tools.FilmRépéter;
+import fr.cuvellier.film_maker.film.tools.FilmIncruster;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,31 +12,18 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FilmRépéterTest {
-
-    @Test
-    void mainTest() {
-        String nom = "euler-house.txt";
-        Film film1 = new TextFileInterpreter(nom);
-        Film film = new FilmRépéter(film1, 2);
-        Films.projeter(film);
-        film.rembobiner();
-        try {
-            Films.sauvegarder(film, ("Reproduction" + nom));
-        } catch (FileNotFoundException e) {
-            System.err.println("Le fichier n'a pas pu être créé.");
-        }
-    }
-
+class FilmIncrusterTest {
     private Film film;
     private Film f;
 
     @BeforeEach
     void setUp() {
         Film film1 = new TextFileInterpreter("decompte.txt");
-        film = new FilmRépéter(film1, 1);
+        Film film2 = new TextFileInterpreter("joconde-anim.txt");
+         film = new FilmIncruster(film1,film2, 1,1);
         Film f1 = new TextFileInterpreter("marche.txt");
-        f = new FilmRépéter(f1,2);
+        Film f2 = new TextFileInterpreter("gym.txt");
+        f = new FilmIncruster(f1,f2, 18,18);
     }
 
     @Test
@@ -84,4 +70,18 @@ class FilmRépéterTest {
                     assertEquals(chars[i][j], écran1[i][j]);
         }
     }
+
+//    @Test
+//    void mainTEST() {
+//        Film film1 = new TextFileInterpreter("decompte.txt");
+//        Film film2 = new TextFileInterpreter("euler-house.txt");
+//        Film film = new FilmIncruster(film1,film2, 1,1);
+//        Films.projeter(film);
+//        film.rembobiner();
+//        try {
+//            Films.sauvegarder(film, "FilmeCo.txt");
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
+//        }
+//    }
 }
