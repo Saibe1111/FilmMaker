@@ -1,13 +1,10 @@
 package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
-import fr.cuvellier.film_maker.film.Films;
 import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
 import fr.cuvellier.film_maker.film.tools.FilmIncruster;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;

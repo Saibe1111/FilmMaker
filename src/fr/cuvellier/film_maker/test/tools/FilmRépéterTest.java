@@ -89,7 +89,7 @@ class FilmRépéterTest {
 //    void mainTest() {
 //        String nom = "euler-house.txt";
 //        Film film1 = new TextFileInterpreter(nom);
-//        Film film = new FilmRépéter(film1, 1);
+//        Film film = new FilmRépéter(film1, -3);
 //        Films.projeter(film);
 //        film.rembobiner();
 //        try {

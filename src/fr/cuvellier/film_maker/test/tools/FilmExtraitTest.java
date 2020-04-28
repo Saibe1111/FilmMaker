@@ -17,7 +17,6 @@ class FilmExtraitTest {
 
     private Film film;
     private Film f;
-
     @BeforeEach
     void setUp() {
         Film film1 = new TextFileInterpreter("decompte.txt");
@@ -29,7 +28,7 @@ class FilmExtraitTest {
     @Test
     void hauteur() {
         assertEquals(52, f.hauteur());
-        assertEquals(105, film.hauteur());
+        assertEquals(105, film.hauteur()    );
     }
 
     @Test
@@ -72,18 +71,18 @@ class FilmExtraitTest {
     }
 
 
-//    @Test
-//    void mainTEST() {
-//        Film film1 = new TextFileInterpreter("euler-house.txt");
-//        Film film = new FilmExtrait(film1,2,4);
-//        Films.projeter(film);
-//        film.rembobiner();
-//        try {
-//            Films.sauvegarder(film, "FilmeCo.txt");
-//        } catch (FileNotFoundException e) {
-//            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
-//        }
-//    }
+    @Test
+    void mainTEST() {
+        Film film1 = new TextFileInterpreter("euler-house.txt");
+        Film film = new FilmExtrait(film1,2,3);
+        Films.projeter(film);
+        film.rembobiner();
+        try {
+            Films.sauvegarder(film, "FilmeCo.txt");
+        } catch (FileNotFoundException e) {
+            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
+        }
+    }
 
 
 }

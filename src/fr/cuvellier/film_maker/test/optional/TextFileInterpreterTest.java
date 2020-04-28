@@ -38,6 +38,7 @@ class TextFileInterpreterTest {
 
     }
 
+
     @Test
     void rembobiner() {
         char[][] écran = new char[f.hauteur()][f.largeur()];

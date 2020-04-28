@@ -32,10 +32,7 @@ public class FilmExtrait implements Film {
      * @param dernièreImage La dernière image que l'on veut pour notre nouveau film
      */
     public FilmExtrait(Film film, int dernièreImage) {
-        this.film = film;
-        this.prmièreImage = 0;
-        this.dernièreImage = dernièreImage;
-        this.imageEnCour = 0;
+        this(film,0,dernièreImage);
     }
 
     /**
