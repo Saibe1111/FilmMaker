@@ -57,29 +57,17 @@ class FilmCollerTest {
                 for(int j = 0; j<chars[i].length;++j)
                     assertEquals(chars[i][j], écran[i][j]);
         }
-        char[][] écran1 = new char[film.hauteur()][film.largeur()];
-        ArrayList<char[][]> ordre1 = new ArrayList<>();
-        while (film.suivante(écran1)) {
-            ordre1.add(écran1.clone());
-        }
-        film.rembobiner();
-        for (char[][] chars : ordre1) {
-            film.suivante(écran1);
-            for(int i=0;i<chars.length;++i)
-                for(int j = 0; j<chars[i].length;++j)
-                    assertEquals(chars[i][j], écran1[i][j]);
-        }
     }
 
 
-//    @Test
-//    void mainTEST() {
-//        Films.projeter(film);
-//        film.rembobiner();
-//        try {
-//            Films.sauvegarder(film, "FilmeCo.txt");
-//        } catch (FileNotFoundException e) {
-//            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
-//        }
-//    }
+    @Test
+    void mainTEST() {
+        Films.projeter(f);
+        f.rembobiner();
+        try {
+            Films.sauvegarder(f, "FilmeCollerTest.txt");
+        } catch (FileNotFoundException e) {
+            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
+        }
+    }
 }

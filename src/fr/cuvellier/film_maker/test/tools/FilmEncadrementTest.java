@@ -76,7 +76,7 @@ class FilmEncadrementTest {
 //        try {
 //            Films.sauvegarder(film, "FilmeCo.txt");
 //        } catch (FileNotFoundException e) {
-//            System.err.println("Le fichier 'fou.txt' n'a pas pu être créé.");
+//            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
 //        }
 //    }
 }

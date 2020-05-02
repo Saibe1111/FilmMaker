@@ -2,20 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf52cac8-9fa0-4a0c-8524-79bfb0e18dc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FilmeCollerTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/LaLigneDuFou.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FilmeCo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FilmeCo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reproductioneuler-house.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductioneuler-house.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmExtrait.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmExtrait.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/optional/TextFileInterpreterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/optional/TextFileInterpreterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmEncadrementTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmEncadrementTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fou.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fou.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/optional/LaDiagonaleDuFou.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/optional/LaDiagonaleDuFou.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/Comparateur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/CompareNom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/CompareNomBis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/Genre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/Personne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/Semaine11$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/Semaine11$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/Semaine11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmCollerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmCollerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmExtraitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmExtraitTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmIncrusterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmIncrusterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmExtrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmExtrait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/optional/TextFileInterpreterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/optional/TextFileInterpreterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/LaDiagonaleDuFou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/LaDiagonaleDuFou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmCollerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmCollerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmEncadrementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmEncadrementTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmExtraitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmExtraitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmIncrusterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmIncrusterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmRépéterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmRépéterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +87,33 @@
       <recent name="E:\JAVA\git\FilmMaker\src\fr\cuvellier\film_maker\film" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Semaine11">
+  <component name="RunManager" selected="Application.LaDiagonaleDuFou">
+    <configuration name="LaDiagonaleDuFou" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.film.optional.LaDiagonaleDuFou" />
+      <module name="FilmMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.cuvellier.film_maker.film.optional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaLigneDuFou" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.film.optional.LaLigneDuFou" />
+      <module name="FilmMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.cuvellier.film_maker.film.optional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Semaine11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.film.tools.Semaine11" />
       <module name="FilmMaker" />
@@ -89,6 +123,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilmCollerTest.mainTEST" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FilmMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.cuvellier.film_maker.test.tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test.tools" />
+      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.tools.FilmCollerTest" />
+      <option name="METHOD_NAME" value="mainTEST" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,61 +159,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FilmRépéterTest.mainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FilmMaker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.cuvellier.film_maker.test.optional.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test.tools" />
-      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.tools.FilmRépéterTest" />
-      <option name="METHOD_NAME" value="mainTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilmRépéterTest.répétitionNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FilmMaker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.cuvellier.film_maker.test.tools.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test.tools" />
-      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.tools.FilmRépéterTest" />
-      <option name="METHOD_NAME" value="répétitionNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilmRépéterTest.répétitionNégative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FilmMaker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.cuvellier.film_maker.test.tools.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test.tools" />
-      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.tools.FilmRépéterTest" />
-      <option name="METHOD_NAME" value="répétitionNégative" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LaDiagonaleDuFou" />
+        <item itemvalue="Application.LaLigneDuFou" />
+        <item itemvalue="JUnit.FilmCollerTest.mainTEST" />
         <item itemvalue="Application.Semaine11" />
         <item itemvalue="JUnit.FilmExtraitTest.mainTEST" />
-        <item itemvalue="JUnit.FilmRépéterTest.mainTest" />
-        <item itemvalue="JUnit.FilmRépéterTest.répétitionNégative" />
-        <item itemvalue="JUnit.FilmRépéterTest.répétitionNull" />
       </list>
     </recent_temporary>
   </component>
@@ -210,26 +212,26 @@
     </state>
     <state x="416" y="497" key="FileChooserDialogImpl/0.0.1080.1880@0.0.1080.1880" timestamp="1586214525177" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588021504054" />
-    <state width="1877" height="36" key="GridCell.Tab.0.bottom" timestamp="1587974554818">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1037" height="450" key="GridCell.Tab.0.bottom" timestamp="1588108402856">
+      <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="495" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1587584045124" />
-    <state width="1877" height="36" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587974554818" />
-    <state width="1877" height="36" key="GridCell.Tab.0.center" timestamp="1587974554818">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1037" height="450" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1588108402856" />
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588106159363" />
+    <state width="1037" height="450" key="GridCell.Tab.0.center" timestamp="1588108402856">
+      <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="495" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1587584045124" />
-    <state width="1877" height="36" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587974554818" />
-    <state width="1877" height="36" key="GridCell.Tab.0.left" timestamp="1587974554818">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1037" height="450" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1588108402856" />
+    <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588106159363" />
+    <state width="1037" height="450" key="GridCell.Tab.0.left" timestamp="1588108402856">
+      <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="495" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1587584045124" />
-    <state width="1877" height="36" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587974554818" />
-    <state width="1877" height="36" key="GridCell.Tab.0.right" timestamp="1587974554818">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1037" height="450" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1588108402856" />
+    <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588106159363" />
+    <state width="1037" height="450" key="GridCell.Tab.0.right" timestamp="1588108402856">
+      <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1037" height="495" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1587584045124" />
-    <state width="1877" height="36" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587974554818" />
+    <state width="1037" height="450" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588108402856" />
+    <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588106159363" />
     <state width="1877" height="326" key="GridCell.Tab.1.bottom" timestamp="1586476941287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -267,9 +269,10 @@
     </state>
     <state x="500" y="258" width="472" height="951" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1586359043798" />
     <state x="889" y="143" width="840" height="852" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586548711354" />
-    <state x="342" y="95" key="new project wizard" timestamp="1588021506285">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-6" y="799" key="new project wizard" timestamp="1588199527685">
+      <screen x="0" y="0" width="1080" height="1880" />
     </state>
+    <state x="-6" y="799" key="new project wizard/0.0.1080.1880@0.0.1080.1880" timestamp="1588199527685" />
     <state x="342" y="95" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1588021506285" />
     <state x="348" y="249" key="run.anything.popup" timestamp="1586273911927">
       <screen x="0" y="0" width="1920" height="1040" />
