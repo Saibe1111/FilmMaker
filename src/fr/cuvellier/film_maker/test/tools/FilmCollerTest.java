@@ -2,6 +2,8 @@ package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
+import fr.cuvellier.film_maker.film.optional.LaDiagonaleDuFou;
+import fr.cuvellier.film_maker.film.optional.LaLigneDuFou;
 import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
 import fr.cuvellier.film_maker.film.tools.FilmColler;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,6 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -40,8 +43,47 @@ class FilmCollerTest {
 
     @Test
     void suivante() {
-        
+        Film f2 = new FilmColler(new LaDiagonaleDuFou(), new LaLigneDuFou());
+        char[][] écran = new char[f2.hauteur()][f2.largeur()];
+        ArrayList<char[][]> ordre = new ArrayList<>();
+
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[0][0] = 'a';
+
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[1][1] = 'a';
+
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[2][2] = 'a';
+
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[3][3] = 'a';
+
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[0][0] = 'a';
+
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[0][1] = 'a';
+
+        for (char[][] chars : ordre) {
+            effacer(écran);
+            f2.suivante(écran);
+            for(int i=0;i<chars.length;++i)
+                for(int j = 0; j<chars[i].length;++j)
+                    assertEquals(chars[i][j], écran[i][j]);
+        }
     }
+    public static void effacer(char[][] écran) {
+        for (char[] ligne : écran)
+            Arrays.fill(ligne, ' ');
+    }
+
 
     @Test
     void rembobiner() {
@@ -58,7 +100,6 @@ class FilmCollerTest {
                     assertEquals(chars[i][j], écran[i][j]);
         }
     }
-
 
     @Test
     void mainTEST() {

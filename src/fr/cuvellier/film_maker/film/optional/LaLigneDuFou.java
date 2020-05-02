@@ -36,7 +36,7 @@ public class LaLigneDuFou implements Film {
     public boolean suivante(char[][] écran) {
         if (num == NB_IMAGES)
             return false;
-        écran[num][1] = 'a'; // un 'a' se balade sur
+        écran[0][num] = 'a'; // un 'a' se balade sur
         // la diagonale
         ++num;
         return true;

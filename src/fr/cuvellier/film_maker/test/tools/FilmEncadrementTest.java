@@ -1,11 +1,13 @@
 package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
+import fr.cuvellier.film_maker.film.optional.LaLigneDuFou;
 import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
 import fr.cuvellier.film_maker.film.tools.FilmEncadrement;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -36,7 +38,59 @@ class FilmEncadrementTest {
 
     @Test
     void suivante() {
+        Film f2 = new FilmEncadrement(new LaLigneDuFou(), 1,'*');
 
+        ArrayList<char[][]> ordre = new ArrayList<>();
+
+        //Ligne
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+
+        ordre.get(ordre.size() - 1)[1][1] = 'a';
+        //bodure
+        ordre.get(ordre.size() - 1)[0][0] = '*';
+        ordre.get(ordre.size() - 1)[1][0] = '*';
+        ordre.get(ordre.size() - 1)[2][0] = '*';
+        ordre.get(ordre.size() - 1)[3][0] = '*';
+        ordre.get(ordre.size() - 1)[0][1] = '*';
+        ordre.get(ordre.size() - 1)[0][2] = '*';
+        ordre.get(ordre.size() - 1)[0][3] = '*';
+        ordre.get(ordre.size() - 1)[3][1] = '*';
+        ordre.get(ordre.size() - 1)[3][2] = '*';
+        ordre.get(ordre.size() - 1)[3][3] = '*';
+        ordre.get(ordre.size() - 1)[1][3] = '*';
+        ordre.get(ordre.size() - 1)[2][3] = '*';
+        //Ligne
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[1][2] = 'a';
+        //bodure
+        ordre.get(ordre.size() - 1)[0][0] = '*';
+        ordre.get(ordre.size() - 1)[1][0] = '*';
+        ordre.get(ordre.size() - 1)[2][0] = '*';
+        ordre.get(ordre.size() - 1)[3][0] = '*';
+        ordre.get(ordre.size() - 1)[0][1] = '*';
+        ordre.get(ordre.size() - 1)[0][2] = '*';
+        ordre.get(ordre.size() - 1)[0][3] = '*';
+        ordre.get(ordre.size() - 1)[3][1] = '*';
+        ordre.get(ordre.size() - 1)[3][2] = '*';
+        ordre.get(ordre.size() - 1)[3][3] = '*';
+        ordre.get(ordre.size() - 1)[1][3] = '*';
+        ordre.get(ordre.size() - 1)[2][3] = '*';
+
+        char[][] écran = new char[f2.hauteur()][f2.largeur()];
+        for (char[][] chars : ordre) {
+            effacer(écran);
+            f2.suivante(écran);
+            for(int i=0;i<chars.length;++i)
+                for(int j = 0; j<chars[i].length;++j){
+                    assertEquals(chars[i][j], écran[i][j]);
+                }
+        }
+    }
+    public static void effacer(char[][] écran) {
+        for (char[] ligne : écran)
+            Arrays.fill(ligne, ' ');
     }
 
     @Test

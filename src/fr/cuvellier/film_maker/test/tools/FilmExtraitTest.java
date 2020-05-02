@@ -3,7 +3,6 @@ package fr.cuvellier.film_maker.test.tools;
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
 import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
-import fr.cuvellier.film_maker.film.tools.FilmColler;
 import fr.cuvellier.film_maker.film.tools.FilmExtrait;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -39,6 +38,7 @@ class FilmExtraitTest {
 
     @Test
     void suivante() {
+
     }
 
     @Test
@@ -82,6 +82,5 @@ class FilmExtraitTest {
             System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
         }
     }
-
 
 }
