@@ -1,6 +1,7 @@
 package fr.cuvellier.film_maker.film.tools;
 
 import fr.cuvellier.film_maker.film.Film;
+import fr.cuvellier.film_maker.film.Films;
 
 
 /**
@@ -59,6 +60,7 @@ public class FilmExtrait implements Film {
         if (imageEnCour < prmièreImage) {
             for (int i = imageEnCour; i < prmièreImage; ++i) {
                 film.suivante(écran);
+                Films.effacer(écran);
                 ++this.imageEnCour;
             }
         }

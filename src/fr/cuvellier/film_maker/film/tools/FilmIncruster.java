@@ -1,10 +1,11 @@
 package fr.cuvellier.film_maker.film.tools;
 
 import fr.cuvellier.film_maker.film.Film;
+import fr.cuvellier.film_maker.film.Films;
 
 /**
  * @author Sebastien CUVELLIER
- * @version 2.0 - 10/04/2020
+ * @version 4.0 - 03/05/2020
  */
 public class FilmIncruster implements Film {
     private Film filmBase;
@@ -50,14 +51,19 @@ public class FilmIncruster implements Film {
         char[][] sousEcran1 = new char[this.filmBase.hauteur()][this.filmBase.largeur()];
         char[][] sousEcran2 = new char[this.filmAIncruster.hauteur()][this.filmAIncruster.largeur()];
 
+        Films.effacer(sousEcran1);
+        Films.effacer(sousEcran2);
+        Films.effacer(écran);
         boolean retourSuivant = this.filmBase.suivante(sousEcran1);
         boolean suivantIncruster = filmAIncruster.suivante(sousEcran2);
         if (retourSuivant){
             for (int i = 0; i < hauteur(); ++i)
                 for (int j = 0; j < largeur(); ++j)
-                    if (i >= this.ligne && j >= this.colone && i<= this.filmAIncruster.hauteur() && j <= this.filmAIncruster.largeur()){
-                        if ( i - this.ligne < sousEcran2.length && j - this.colone < sousEcran2[i - this.colone].length )
-                            écran[i][j] = sousEcran2[i - this.colone][j - this.ligne];
+                    if (i >= this.ligne && j >= this.colone && i - this.ligne +1 <= this.filmAIncruster.hauteur() && j - this.colone + 1<= this.filmAIncruster.largeur()){
+                        if ( i - this.ligne  < sousEcran2.length && j - this.colone < sousEcran2[i - this.ligne].length ){
+                            écran[i][j] = sousEcran2[i - this.ligne][j - this.colone];
+                        }
+
                     }
                     else
                     if( i < sousEcran1.length && j < sousEcran1[i].length )

@@ -2,6 +2,8 @@ package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
+import fr.cuvellier.film_maker.film.optional.LaDiagonaleDuFou;
+import fr.cuvellier.film_maker.film.optional.LaLigneDuFou;
 import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
 import fr.cuvellier.film_maker.film.tools.FilmColler;
 import fr.cuvellier.film_maker.film.tools.FilmRépéter;
@@ -10,6 +12,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -54,7 +57,37 @@ class FilmRépéterTest {
 
     @Test
     void suivante() {
+        Film f2 = new FilmRépéter(new LaLigneDuFou(),2);
+        char[][] écran = new char[f2.hauteur()][f2.largeur()];
+        ArrayList<char[][]> ordre = new ArrayList<>();
 
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[0][0] = 'a';
+
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[0][1] = 'a';
+
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[0][0] = 'a';
+
+        ordre.add(new char[f2.hauteur()][f2.largeur()]);
+        effacer(ordre.get(ordre.size() - 1));
+        ordre.get(ordre.size() - 1)[0][1] = 'a';
+
+        for (char[][] chars : ordre) {
+            effacer(écran);
+            f2.suivante(écran);
+            for(int i=0;i<chars.length;++i)
+                for(int j = 0; j<chars[i].length;++j)
+                    assertEquals(chars[i][j], écran[i][j]);
+        }
+    }
+    public static void effacer(char[][] écran) {
+        for (char[] ligne : écran)
+            Arrays.fill(ligne, ' ');
     }
 
     @Test
@@ -85,17 +118,17 @@ class FilmRépéterTest {
         }
     }
 
-//    @Test
-//    void mainTest() {
-//        String nom = "euler-house.txt";
-//        Film film1 = new TextFileInterpreter(nom);
-//        Film film = new FilmRépéter(film1, -3);
-//        Films.projeter(film);
-//        film.rembobiner();
-//        try {
-//            Films.sauvegarder(film, ("Reproduction" + nom));
-//        } catch (FileNotFoundException e) {
-//            System.err.println("Le fichier n'a pas pu être créé.");
-//        }
-//    }
+    @Test
+    void mainTest() {
+        String nom = "euler-house.txt";
+        Film film1 = new TextFileInterpreter(nom);
+        Film film = new FilmRépéter(film1, 2);
+        Films.projeter(film);
+        film.rembobiner();
+        try {
+            Films.sauvegarder(film, ("Reproduction" + nom));
+        } catch (FileNotFoundException e) {
+            System.err.println("Le fichier n'a pas pu être créé.");
+        }
+    }
 }
