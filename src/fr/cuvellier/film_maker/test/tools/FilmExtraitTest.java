@@ -94,16 +94,16 @@ class FilmExtraitTest {
     }
 
 
-    @Test
-    void mainTEST() {
-        Film film = new FilmExtrait(new LaDiagonaleDuFou(),1,2);
-        Films.projeter(film);
-        film.rembobiner();
-        try {
-            Films.sauvegarder(film, "FilmeCo.txt");
-        } catch (FileNotFoundException e) {
-            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
-        }
-    }
+//    @Test
+//    void mainTEST() {
+//        Film film = new FilmExtrait(new LaDiagonaleDuFou(),1,2);
+//        Films.projeter(film);
+//        film.rembobiner();
+//        try {
+//            Films.sauvegarder(film, "out.txt");
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
+//        }
+//    }
 
 }

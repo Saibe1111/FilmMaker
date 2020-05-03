@@ -3,19 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="bf52cac8-9fa0-4a0c-8524-79bfb0e18dc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FilmeCo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FilmeCo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reproductioneuler-house.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductioneuler-house.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmEncadrement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmEncadrement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmExtrait.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmExtrait.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmIncruster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/film/tools/FilmIncruster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmCollerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmCollerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmEncadrementTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmEncadrementTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmExtraitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmExtraitTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmIncrusterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmIncrusterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmRépéterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilmMaker/fr/cuvellier/film_maker/test/tools/FilmRépéterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmExtrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmExtrait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmIncruster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/FilmIncruster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilmeCo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilmeCollerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reproductioneuler-house.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reproductiongym.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmCollerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmCollerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmEncadrementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmEncadrementTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmExtraitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmExtraitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmIncrusterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmIncrusterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmRépéterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/FilmRépéterTest.java" afterDir="false" />
@@ -216,26 +210,26 @@
     </state>
     <state x="416" y="497" key="FileChooserDialogImpl/0.0.1080.1880@0.0.1080.1880" timestamp="1588463007727" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588021504054" />
-    <state width="1877" height="127" key="GridCell.Tab.0.bottom" timestamp="1588538888975">
+    <state width="1877" height="127" key="GridCell.Tab.0.bottom" timestamp="1588539079828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1037" height="582" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1588463013926" />
-    <state width="1877" height="127" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588538888975" />
-    <state width="1877" height="127" key="GridCell.Tab.0.center" timestamp="1588538888975">
+    <state width="1877" height="127" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588539079828" />
+    <state width="1877" height="127" key="GridCell.Tab.0.center" timestamp="1588539079828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1037" height="582" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1588463013926" />
-    <state width="1877" height="127" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588538888975" />
-    <state width="1877" height="127" key="GridCell.Tab.0.left" timestamp="1588538888975">
+    <state width="1877" height="127" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588539079828" />
+    <state width="1877" height="127" key="GridCell.Tab.0.left" timestamp="1588539079828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1037" height="582" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1588463013926" />
-    <state width="1877" height="127" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588538888975" />
-    <state width="1877" height="127" key="GridCell.Tab.0.right" timestamp="1588538888975">
+    <state width="1877" height="127" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588539079828" />
+    <state width="1877" height="127" key="GridCell.Tab.0.right" timestamp="1588539079828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1037" height="582" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588463013926" />
-    <state width="1877" height="127" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588538888975" />
+    <state width="1877" height="127" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588539079828" />
     <state width="1877" height="326" key="GridCell.Tab.1.bottom" timestamp="1586476941287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -118,17 +118,17 @@ class FilmRépéterTest {
         }
     }
 
-    @Test
-    void mainTest() {
-        String nom = "euler-house.txt";
-        Film film1 = new TextFileInterpreter(nom);
-        Film film = new FilmRépéter(film1, 2);
-        Films.projeter(film);
-        film.rembobiner();
-        try {
-            Films.sauvegarder(film, ("Reproduction" + nom));
-        } catch (FileNotFoundException e) {
-            System.err.println("Le fichier n'a pas pu être créé.");
-        }
-    }
+//    @Test
+//    void mainTest() {
+//        String nom = "euler-house.txt";
+//        Film film1 = new TextFileInterpreter(nom);
+//        Film film = new FilmRépéter(film1, 2);
+//        Films.projeter(film);
+//        film.rembobiner();
+//        try {
+//            Films.sauvegarder(film, ("Reproduction" + nom));
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Le fichier n'a pas pu être créé.");
+//        }
+//    }
 }

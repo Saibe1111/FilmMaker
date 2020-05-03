@@ -100,17 +100,17 @@ class FilmIncrusterTest {
         }
     }
 
-    @Test
-    void mainTEST() {
-        Film film1 = new TextFileInterpreter("decompte.txt");
-        Film film2 = new TextFileInterpreter("euler-house.txt");
-        Film film = new FilmIncruster(film1,film2, 145,95);
-        Films.projeter(film);
-        film.rembobiner();
-        try {
-            Films.sauvegarder(film, "FilmeCo.txt");
-        } catch (FileNotFoundException e) {
-            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
-        }
-    }
+//    @Test
+//    void mainTEST() {
+//        Film film1 = new TextFileInterpreter("decompte.txt");
+//        Film film2 = new TextFileInterpreter("euler-house.txt");
+//        Film film = new FilmIncruster(film1,film2, 145,95);
+//        Films.projeter(film);
+//        film.rembobiner();
+//        try {
+//            Films.sauvegarder(film, "out.txt");
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
+//        }
+//    }
 }

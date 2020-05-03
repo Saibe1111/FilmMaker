@@ -113,14 +113,14 @@ class FilmCollerTest {
         }
     }
 
-    @Test
-    void mainTEST() {
-        Films.projeter(f);
-        f.rembobiner();
-        try {
-            Films.sauvegarder(f, "FilmeCollerTest.txt");
-        } catch (FileNotFoundException e) {
-            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
-        }
-    }
+//    @Test
+//    void mainTEST() {
+//        Films.projeter(f);
+//        f.rembobiner();
+//        try {
+//            Films.sauvegarder(f, "out.txt");
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
+//        }
+//    }
 }

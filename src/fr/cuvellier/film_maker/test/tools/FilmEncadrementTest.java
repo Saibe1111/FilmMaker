@@ -128,7 +128,7 @@ class FilmEncadrementTest {
 //        Films.projeter(film);
 //        film.rembobiner();
 //        try {
-//            Films.sauvegarder(film, "FilmeCo.txt");
+//            Films.sauvegarder(film, "out.txt");
 //        } catch (FileNotFoundException e) {
 //            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
 //        }
