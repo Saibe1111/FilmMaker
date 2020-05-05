@@ -2,37 +2,24 @@ package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
-import fr.cuvellier.film_maker.film.optional.LaLigneDuFou;
-import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
+import fr.cuvellier.film_maker.test.necessary_for_testing.LaLigneDuFou;
 import fr.cuvellier.film_maker.film.tools.FilmEncadrement;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FilmEncadrementTest {
 
-    private Film film;
-    private Film f;
-
-    @BeforeEach
-    void setUp() {
-        Film film1 = new TextFileInterpreter("decompte.txt");
-         film = new FilmEncadrement(film1);
-        Film f2 = new TextFileInterpreter("gym.txt");
-        f = new FilmEncadrement(f2);
-    }
-
     @Test
     void hauteur() {
-        assertEquals(58, f.hauteur());
-        assertEquals(113, film.hauteur());
+        Film film = new FilmEncadrement(new LaLigneDuFou());
+        assertEquals(4, film.hauteur());
     }
 
     @Test
     void largeur() {
-        assertEquals(83, f.largeur());
-        assertEquals(158, film.largeur());
+        Film film = new FilmEncadrement(new LaLigneDuFou());
+        assertEquals(4, film.largeur());
     }
 
     @Test
@@ -90,18 +77,7 @@ class FilmEncadrementTest {
 
     @Test
     void rembobiner() {
-        char[][] écran = new char[f.hauteur()][f.largeur()];
-        ArrayList<char[][]> ordre = new ArrayList<>();
-        while (f.suivante(écran)) {
-            ordre.add(écran.clone());
-        }
-        f.rembobiner();
-        for (char[][] chars : ordre) {
-            f.suivante(écran);
-            for(int i=0;i<chars.length;++i)
-                for(int j = 0; j<chars[i].length;++j)
-                    assertEquals(chars[i][j], écran[i][j]);
-        }
+        Film film = new FilmEncadrement(new LaLigneDuFou());
         char[][] écran1 = new char[film.hauteur()][film.largeur()];
         ArrayList<char[][]> ordre1 = new ArrayList<>();
         while (film.suivante(écran1)) {

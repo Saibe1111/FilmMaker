@@ -1,4 +1,4 @@
-package fr.cuvellier.film_maker.film.optional;
+package fr.cuvellier.film_maker.test.necessary_for_testing;
 
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;

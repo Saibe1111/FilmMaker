@@ -137,5 +137,4 @@ public class TextFileInterpreter implements Film {
         if (cpt == this.hauteur + this.marge)
             this.images.remove(this.images.size() - 1);
     }
-
 }
