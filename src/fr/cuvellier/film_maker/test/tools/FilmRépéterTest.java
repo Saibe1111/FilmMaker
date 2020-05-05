@@ -35,6 +35,7 @@ class FilmRépéterTest {
         char[][] écran = new char[filmIntéNull.hauteur()][filmIntéNull.largeur()];
         assertFalse(filmNull.suivante(écran));
     }
+
     @Test
     void répétitionNégative(){
         Film filmIntéNull = new TextFileInterpreter("decompte.txt");
@@ -117,18 +118,4 @@ class FilmRépéterTest {
                     assertEquals(chars[i][j], écran1[i][j]);
         }
     }
-
-//    @Test
-//    void mainTest() {
-//        String nom = "euler-house.txt";
-//        Film film1 = new TextFileInterpreter(nom);
-//        Film film = new FilmRépéter(film1, 2);
-//        Films.projeter(film);
-//        film.rembobiner();
-//        try {
-//            Films.sauvegarder(film, ("Reproduction" + nom));
-//        } catch (FileNotFoundException e) {
-//            System.err.println("Le fichier n'a pas pu être créé.");
-//        }
-//    }
 }

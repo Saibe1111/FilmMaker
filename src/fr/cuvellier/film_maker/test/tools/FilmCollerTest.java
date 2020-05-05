@@ -8,11 +8,7 @@ import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
 import fr.cuvellier.film_maker.film.tools.FilmColler;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class FilmCollerTest {
@@ -48,42 +44,37 @@ class FilmCollerTest {
         ArrayList<char[][]> ordre = new ArrayList<>();
 
         ordre.add(new char[f2.hauteur()][f2.largeur()]);
-        effacer(ordre.get(ordre.size() - 1));
+        Films.effacer(ordre.get(ordre.size() - 1));
         ordre.get(ordre.size() - 1)[0][0] = 'a';
 
         ordre.add(new char[f2.hauteur()][f2.largeur()]);
-        effacer(ordre.get(ordre.size() - 1));
+        Films.effacer(ordre.get(ordre.size() - 1));
         ordre.get(ordre.size() - 1)[1][1] = 'a';
 
         ordre.add(new char[f2.hauteur()][f2.largeur()]);
-        effacer(ordre.get(ordre.size() - 1));
+        Films.effacer(ordre.get(ordre.size() - 1));
         ordre.get(ordre.size() - 1)[2][2] = 'a';
 
         ordre.add(new char[f2.hauteur()][f2.largeur()]);
-        effacer(ordre.get(ordre.size() - 1));
+        Films.effacer(ordre.get(ordre.size() - 1));
         ordre.get(ordre.size() - 1)[3][3] = 'a';
 
         ordre.add(new char[f2.hauteur()][f2.largeur()]);
-        effacer(ordre.get(ordre.size() - 1));
+        Films.effacer(ordre.get(ordre.size() - 1));
         ordre.get(ordre.size() - 1)[0][0] = 'a';
 
         ordre.add(new char[f2.hauteur()][f2.largeur()]);
-        effacer(ordre.get(ordre.size() - 1));
+        Films.effacer(ordre.get(ordre.size() - 1));
         ordre.get(ordre.size() - 1)[0][1] = 'a';
 
         for (char[][] chars : ordre) {
-            effacer(écran);
+            Films.effacer(écran);
             f2.suivante(écran);
             for(int i=0;i<chars.length;++i)
                 for(int j = 0; j<chars[i].length;++j)
                     assertEquals(chars[i][j], écran[i][j]);
         }
     }
-    public static void effacer(char[][] écran) {
-        for (char[] ligne : écran)
-            Arrays.fill(ligne, ' ');
-    }
-
 
     @Test
     void rembobiner() {
@@ -112,15 +103,4 @@ class FilmCollerTest {
                     assertEquals(chars[i][j], écran1[i][j]);
         }
     }
-
-//    @Test
-//    void mainTEST() {
-//        Films.projeter(f);
-//        f.rembobiner();
-//        try {
-//            Films.sauvegarder(f, "out.txt");
-//        } catch (FileNotFoundException e) {
-//            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
-//        }
-//    }
 }

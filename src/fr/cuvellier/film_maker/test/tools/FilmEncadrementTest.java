@@ -1,14 +1,13 @@
 package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
+import fr.cuvellier.film_maker.film.Films;
 import fr.cuvellier.film_maker.film.optional.LaLigneDuFou;
 import fr.cuvellier.film_maker.film.optional.TextFileInterpreter;
 import fr.cuvellier.film_maker.film.tools.FilmEncadrement;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class FilmEncadrementTest {
@@ -38,13 +37,13 @@ class FilmEncadrementTest {
 
     @Test
     void suivante() {
-        Film f2 = new FilmEncadrement(new LaLigneDuFou(), 1,'*');
+        Film f2 = new FilmEncadrement(new LaLigneDuFou());
 
         ArrayList<char[][]> ordre = new ArrayList<>();
 
         //Ligne
         ordre.add(new char[f2.hauteur()][f2.largeur()]);
-        effacer(ordre.get(ordre.size() - 1));
+        Films.effacer(ordre.get(ordre.size() - 1));
 
         ordre.get(ordre.size() - 1)[1][1] = 'a';
         //bodure
@@ -62,7 +61,7 @@ class FilmEncadrementTest {
         ordre.get(ordre.size() - 1)[2][3] = '*';
         //Ligne
         ordre.add(new char[f2.hauteur()][f2.largeur()]);
-        effacer(ordre.get(ordre.size() - 1));
+        Films.effacer(ordre.get(ordre.size() - 1));
         ordre.get(ordre.size() - 1)[1][2] = 'a';
         //bodure
         ordre.get(ordre.size() - 1)[0][0] = '*';
@@ -80,17 +79,13 @@ class FilmEncadrementTest {
 
         char[][] écran = new char[f2.hauteur()][f2.largeur()];
         for (char[][] chars : ordre) {
-            effacer(écran);
+            Films.effacer(écran);
             f2.suivante(écran);
             for(int i=0;i<chars.length;++i)
                 for(int j = 0; j<chars[i].length;++j){
                     assertEquals(chars[i][j], écran[i][j]);
                 }
         }
-    }
-    public static void effacer(char[][] écran) {
-        for (char[] ligne : écran)
-            Arrays.fill(ligne, ' ');
     }
 
     @Test
@@ -120,17 +115,4 @@ class FilmEncadrementTest {
                     assertEquals(chars[i][j], écran1[i][j]);
         }
     }
-
-//    @Test
-//    void mainTEST() {
-//        Film film2 = new TextFileInterpreter("euler-house.txt");
-//        Film film = new FilmEncadrement(film2);
-//        Films.projeter(film);
-//        film.rembobiner();
-//        try {
-//            Films.sauvegarder(film, "out.txt");
-//        } catch (FileNotFoundException e) {
-//            System.err.println("Le fichier 'out.txt' n'a pas pu être créé.");
-//        }
-//    }
 }

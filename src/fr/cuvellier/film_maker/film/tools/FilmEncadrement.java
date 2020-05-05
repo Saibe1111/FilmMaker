@@ -18,7 +18,7 @@ public class FilmEncadrement implements Film {
      * @param film film que l'on veut encadrer.
      */
     public FilmEncadrement(Film film) {
-        this(film,4,'*');
+        this(film,1,'*');
     }
 
     /**
