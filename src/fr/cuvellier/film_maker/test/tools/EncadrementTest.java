@@ -2,29 +2,31 @@ package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
+import fr.cuvellier.film_maker.film.tools.Encadrement;
 import fr.cuvellier.film_maker.test.necessary_for_testing.LaLigneDuFou;
-import fr.cuvellier.film_maker.film.tools.FilmEncadrement;
 import org.junit.jupiter.api.Test;
-import java.util.ArrayList;
-import static org.junit.jupiter.api.Assertions.*;
 
-class FilmEncadrementTest {
+import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class EncadrementTest {
 
     @Test
     void hauteur() {
-        Film film = new FilmEncadrement(new LaLigneDuFou());
+        Film film = new Encadrement(new LaLigneDuFou());
         assertEquals(4, film.hauteur());
     }
 
     @Test
     void largeur() {
-        Film film = new FilmEncadrement(new LaLigneDuFou());
+        Film film = new Encadrement(new LaLigneDuFou());
         assertEquals(4, film.largeur());
     }
 
     @Test
     void suivante() {
-        Film f2 = new FilmEncadrement(new LaLigneDuFou());
+        Film f2 = new Encadrement(new LaLigneDuFou());
 
         ArrayList<char[][]> ordre = new ArrayList<>();
 
@@ -77,7 +79,7 @@ class FilmEncadrementTest {
 
     @Test
     void rembobiner() {
-        Film film = new FilmEncadrement(new LaLigneDuFou());
+        Film film = new Encadrement(new LaLigneDuFou());
         char[][] écran1 = new char[film.hauteur()][film.largeur()];
         ArrayList<char[][]> ordre1 = new ArrayList<>();
         while (film.suivante(écran1)) {
@@ -91,4 +93,5 @@ class FilmEncadrementTest {
                     assertEquals(chars[i][j], écran1[i][j]);
         }
     }
+
 }

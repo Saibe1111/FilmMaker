@@ -7,7 +7,7 @@ import fr.cuvellier.film_maker.film.Films;
  * @author Sebastien CUVELLIER
  * @version 4.0 - 03/05/2020
  */
-public class FilmIncruster implements Film {
+public class Incrustation implements Film {
     private Film filmBase;
     private Film filmAIncruster;
     private int colone;
@@ -20,7 +20,7 @@ public class FilmIncruster implements Film {
      * @param colone colone à laquel on incruste le film
      * @param ligne ligne à laquel on incruste le film
      */
-    public FilmIncruster(Film filmBase, Film filmAIncruster, int colone, int ligne) {
+    public Incrustation(Film filmBase, Film filmAIncruster, int colone, int ligne) {
         this.filmBase = filmBase;
         this.filmAIncruster = filmAIncruster;
         this.colone = colone;
@@ -55,7 +55,7 @@ public class FilmIncruster implements Film {
         Films.effacer(sousEcran2);
         Films.effacer(écran);
         boolean retourSuivant = this.filmBase.suivante(sousEcran1);
-        boolean suivantIncruster = filmAIncruster.suivante(sousEcran2);
+        filmAIncruster.suivante(sousEcran2);
         if (retourSuivant){
             for (int i = 0; i < hauteur(); ++i)
                 for (int j = 0; j < largeur(); ++j)

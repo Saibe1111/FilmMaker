@@ -6,7 +6,7 @@ import fr.cuvellier.film_maker.film.Film;
  * @author Sebastien CUVELLIER
  * @version 1.0 - 07/04/2020
  */
-public class FilmColler implements Film {
+public class Collage implements Film{
     private Film film1;
     private Film film2;
 
@@ -15,9 +15,12 @@ public class FilmColler implements Film {
      * @param film1 premier film
      * @param film2 deuxième film
      */
-    public FilmColler(Film film1, Film film2) {
-        this.film1 = film1;
-        this.film2 = film2;
+    public Collage(Film film1, Film film2) {
+        //this.film1 = film1;
+        //this.film2 = film2;
+
+        this.film1 = new Copie(film1);
+        this.film2 = new Copie(film1);
     }
 
     /**

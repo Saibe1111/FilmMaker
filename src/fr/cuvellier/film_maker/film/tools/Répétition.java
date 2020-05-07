@@ -6,7 +6,7 @@ import fr.cuvellier.film_maker.film.Film;
  * @author Sebastien CUVELLIER
  * @version 1.1 - 20/04/2020
  */
-public class FilmRépéter implements Film {
+public class Répétition implements Film {
     private int nombreDeRépétition;
     private int répétitionRestante;
     private Film film;
@@ -16,7 +16,7 @@ public class FilmRépéter implements Film {
      * @param film film que l'on veut répéter.
      * @param nombreDeRépétition nombre de fois que l'on veut le répéter.
      */
-    public FilmRépéter(Film film, int nombreDeRépétition) {
+    public Répétition(Film film, int nombreDeRépétition) {
         this(film);
         this.nombreDeRépétition = nombreDeRépétition;
         this.répétitionRestante = nombreDeRépétition;
@@ -25,7 +25,7 @@ public class FilmRépéter implements Film {
      *Constructeur optionnel qui initialise le film de ce dernier et le nombre de répétition a une .
      * @param film film que l'on veut répéter.
      */
-    public FilmRépéter(Film film) {
+    public Répétition(Film film) {
         this.film = film;
         this.nombreDeRépétition = 1;
         this.répétitionRestante = 1;
@@ -52,8 +52,7 @@ public class FilmRépéter implements Film {
      */
     @Override
     public boolean suivante(char[][] écran) {
-        boolean suivant = film.suivante(écran);
-        if (!suivant) {
+        if (!film.suivante(écran)) {
             --répétitionRestante;
             film.rembobiner();
             if (répétitionRestante !=0)

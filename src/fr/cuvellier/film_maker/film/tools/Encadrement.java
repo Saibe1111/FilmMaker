@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @version 3.0 - 03/05/2020
  * @author Sebastien CUVELLIER
  */
-public class FilmEncadrement implements Film {
+public class Encadrement implements Film {
     private Film film;
     private  char motif ;
     private  int tailleBordure ;
@@ -17,7 +17,7 @@ public class FilmEncadrement implements Film {
      * Constructeur qui permet d'encardrer un film
      * @param film film que l'on veut encadrer.
      */
-    public FilmEncadrement(Film film) {
+    public Encadrement(Film film) {
         this(film,1,'*');
     }
 
@@ -27,7 +27,7 @@ public class FilmEncadrement implements Film {
      * @param tailleBordure taille de la bodure.
      * @param motif motif avec lequel on veut entourer.
      */
-    public FilmEncadrement(Film film, int tailleBordure, char motif) {
+    public Encadrement(Film film, int tailleBordure, char motif) {
         this.tailleBordure = tailleBordure;
         this.motif = motif;
         this.film = film;
