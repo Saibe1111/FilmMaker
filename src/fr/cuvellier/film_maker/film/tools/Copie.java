@@ -1,6 +1,7 @@
 package fr.cuvellier.film_maker.film.tools;
 
 import fr.cuvellier.film_maker.film.Film;
+import fr.cuvellier.film_maker.film.Films;
 
 import java.util.ArrayList;
 
@@ -66,10 +67,12 @@ public class Copie implements Film {
     private void lire(){
         boolean test = true;
         this.images.add(new char[hauteur()][largeur()]);
+        Films.effacer(this.images.get(this.images.size() - 1));
         while (test) {
             test = film.suivante(this.images.get(this.images.size() - 1));
             if (test){
                 this.images.add(new char[hauteur()][largeur()]);
+                Films.effacer(this.images.get(this.images.size() - 1));
             }else{
                 this.images.remove(this.images.size() -1);
             }

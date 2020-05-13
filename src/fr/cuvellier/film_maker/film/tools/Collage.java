@@ -16,11 +16,8 @@ public class Collage implements Film{
      * @param film2 deuxième film
      */
     public Collage(Film film1, Film film2) {
-        //this.film1 = film1;
-        //this.film2 = film2;
-
         this.film1 = new Copie(film1);
-        this.film2 = new Copie(film1);
+        this.film2 = new Copie(film2);
     }
 
     /**

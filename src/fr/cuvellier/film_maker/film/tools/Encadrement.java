@@ -1,31 +1,35 @@
 package fr.cuvellier.film_maker.film.tools;
 
 import fr.cuvellier.film_maker.film.Film;
+import fr.cuvellier.film_maker.film.Films;
+import fr.cuvellier.film_maker.test.necessary_for_testing.LaDiagonaleDuFou;
 
-import java.util.Arrays;
+import java.io.FileNotFoundException;
 
 /**
- * @version 3.0 - 03/05/2020
  * @author Sebastien CUVELLIER
+ * @version 3.0 - 03/05/2020
  */
 public class Encadrement implements Film {
     private Film film;
-    private  char motif ;
-    private  int tailleBordure ;
+    private char motif;
+    private int tailleBordure;
 
     /**
      * Constructeur qui permet d'encardrer un film
+     *
      * @param film film que l'on veut encadrer.
      */
     public Encadrement(Film film) {
-        this(film,1,'*');
+        this(film, 1, '*');
     }
 
     /**
      * Constructeur qui permet d'encardrer un film
-     * @param film film que l'on veut encadrer.
+     *
+     * @param film          film que l'on veut encadrer.
      * @param tailleBordure taille de la bodure.
-     * @param motif motif avec lequel on veut entourer.
+     * @param motif         motif avec lequel on veut entourer.
      */
     public Encadrement(Film film, int tailleBordure, char motif) {
         this.tailleBordure = tailleBordure;
@@ -42,7 +46,7 @@ public class Encadrement implements Film {
     }
 
     /**
-     * @see Film#largeur() 
+     * @see Film#largeur()
      */
     @Override
     public int largeur() {
@@ -55,19 +59,17 @@ public class Encadrement implements Film {
     @Override
     public boolean suivante(char[][] écran) {
         char[][] sousEcran = new char[film.hauteur()][film.largeur()];
-        for (char[] ligne : sousEcran)
-            Arrays.fill(ligne, ' ');
-
-            for (int i = 0; i < this.largeur(); ++i)
-                for (int j = 0; j < tailleBordure; ++j) {
-                    écran[j][i] = motif;
-                    écran[this.hauteur() - j - 1][i] = motif;
-                }
-            for (int i = 0; i < this.hauteur(); ++i)
-                for (int j = 0; j < tailleBordure; ++j) {
-                    écran[i][j] = motif;
-                    écran[i][this.largeur() - j - 1] = motif;
-                }
+        Films.effacer(sousEcran);
+        for (int i = 0; i < this.largeur(); ++i)
+            for (int j = 0; j < tailleBordure; ++j) {
+                écran[j][i] = motif;
+                écran[this.hauteur() - j - 1][i] = motif;
+            }
+        for (int i = 0; i < this.hauteur(); ++i)
+            for (int j = 0; j < tailleBordure; ++j) {
+                écran[i][j] = motif;
+                écran[i][this.largeur() - j - 1] = motif;
+            }
         boolean suivant = film.suivante(sousEcran);
         for (int i = 0; i < sousEcran.length; ++i)
             System.arraycopy(sousEcran[i], 0, écran[i + tailleBordure], tailleBordure, sousEcran[i].length);
@@ -81,4 +83,20 @@ public class Encadrement implements Film {
     public void rembobiner() {
         film.rembobiner();
     }
+
+        public static void main(String[] args) {
+            Film film1 = new LaDiagonaleDuFou();
+            Film c = new Encadrement(film1);
+
+            Films.projeter(c);
+            c.rembobiner();
+            try {
+                Films.sauvegarder(c, "test2.txt");
+            } catch (FileNotFoundException e) {
+                System.err.println("Le fichier 'test2.txt' n'a pas pu être créé.");
+            }
+        }
+
+
+
 }

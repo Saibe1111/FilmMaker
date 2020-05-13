@@ -1,15 +1,16 @@
 package fr.cuvellier.film_maker.test.tools;
 
 import fr.cuvellier.film_maker.film.Film;
+import fr.cuvellier.film_maker.film.tools.Répétition;
 import fr.cuvellier.film_maker.test.necessary_for_testing.LaDiagonaleDuFou;
 import fr.cuvellier.film_maker.test.necessary_for_testing.LaLigneDuFou;
-import fr.cuvellier.film_maker.film.tools.Répétition;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class RépétitionTest {
 
@@ -90,4 +91,8 @@ class RépétitionTest {
                     assertEquals(chars[i][j], écran1[i][j]);
         }
     }
+
+
+
+
 }

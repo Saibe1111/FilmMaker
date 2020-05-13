@@ -21,8 +21,8 @@ public class Incrustation implements Film {
      * @param ligne ligne à laquel on incruste le film
      */
     public Incrustation(Film filmBase, Film filmAIncruster, int colone, int ligne) {
-        this.filmBase = filmBase;
-        this.filmAIncruster = filmAIncruster;
+        this.filmBase = new Copie(filmBase);
+        this.filmAIncruster = new Copie(filmAIncruster);
         this.colone = colone;
         this.ligne = ligne;
     }
@@ -63,13 +63,11 @@ public class Incrustation implements Film {
                         if ( i - this.ligne  < sousEcran2.length && j - this.colone < sousEcran2[i - this.ligne].length ){
                             écran[i][j] = sousEcran2[i - this.ligne][j - this.colone];
                         }
-
                     }
                     else
                     if( i < sousEcran1.length && j < sousEcran1[i].length )
                         écran[i][j] = sousEcran1[i][j];
         }
-
         return retourSuivant;
     }
 

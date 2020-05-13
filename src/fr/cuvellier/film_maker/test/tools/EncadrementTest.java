@@ -3,9 +3,11 @@ package fr.cuvellier.film_maker.test.tools;
 import fr.cuvellier.film_maker.film.Film;
 import fr.cuvellier.film_maker.film.Films;
 import fr.cuvellier.film_maker.film.tools.Encadrement;
+import fr.cuvellier.film_maker.test.necessary_for_testing.LaDiagonaleDuFou;
 import fr.cuvellier.film_maker.test.necessary_for_testing.LaLigneDuFou;
 import org.junit.jupiter.api.Test;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
