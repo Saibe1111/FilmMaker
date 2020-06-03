@@ -1,16 +1,14 @@
-package fr.cuvellier.film_maker.film.tools;
+package fr.cuvellier_laurens.film_maker.film.tools;
 
-import fr.cuvellier.film_maker.film.Film;
-import fr.cuvellier.film_maker.film.Films;
-import fr.cuvellier.film_maker.test.necessary_for_testing.LaDiagonaleDuFou;
-
-import java.io.FileNotFoundException;
+import fr.cuvellier_laurens.film_maker.film.Film;
+import fr.cuvellier_laurens.film_maker.film.Films;
 
 /**
- * @author Sebastien CUVELLIER
+ * @author Sebastien CUVELLIER  - Fleur LAURENS
  * @version 3.0 - 03/05/2020
+ * Permet d'encadrer un Film
  */
-public class Encadrement implements Film {
+public class Encadrement implements Film{
     private Film film;
     private char motif;
     private int tailleBordure;
@@ -57,22 +55,22 @@ public class Encadrement implements Film {
      * @see Film#suivante(char[][])
      */
     @Override
-    public boolean suivante(char[][] écran) {
+    public boolean suivante(char[][] ecran) {
         char[][] sousEcran = new char[film.hauteur()][film.largeur()];
         Films.effacer(sousEcran);
         for (int i = 0; i < this.largeur(); ++i)
             for (int j = 0; j < tailleBordure; ++j) {
-                écran[j][i] = motif;
-                écran[this.hauteur() - j - 1][i] = motif;
+                ecran[j][i] = motif;
+                ecran[this.hauteur() - j - 1][i] = motif;
             }
         for (int i = 0; i < this.hauteur(); ++i)
             for (int j = 0; j < tailleBordure; ++j) {
-                écran[i][j] = motif;
-                écran[i][this.largeur() - j - 1] = motif;
+                ecran[i][j] = motif;
+                ecran[i][this.largeur() - j - 1] = motif;
             }
         boolean suivant = film.suivante(sousEcran);
         for (int i = 0; i < sousEcran.length; ++i)
-            System.arraycopy(sousEcran[i], 0, écran[i + tailleBordure], tailleBordure, sousEcran[i].length);
+            System.arraycopy(sousEcran[i], 0, ecran[i + tailleBordure], tailleBordure, sousEcran[i].length);
         return suivant;
     }
 
@@ -83,20 +81,4 @@ public class Encadrement implements Film {
     public void rembobiner() {
         film.rembobiner();
     }
-
-        public static void main(String[] args) {
-            Film film1 = new LaDiagonaleDuFou();
-            Film c = new Encadrement(film1);
-
-            Films.projeter(c);
-            c.rembobiner();
-            try {
-                Films.sauvegarder(c, "test2.txt");
-            } catch (FileNotFoundException e) {
-                System.err.println("Le fichier 'test2.txt' n'a pas pu être créé.");
-            }
-        }
-
-
-
 }

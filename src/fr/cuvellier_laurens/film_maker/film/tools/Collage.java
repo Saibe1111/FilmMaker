@@ -1,11 +1,13 @@
-package fr.cuvellier.film_maker.film.tools;
+package fr.cuvellier_laurens.film_maker.film.tools;
 
-import fr.cuvellier.film_maker.film.Film;
+import fr.cuvellier_laurens.film_maker.film.Film;
 
 /**
- * @author Sebastien CUVELLIER
+ * @author Sebastien CUVELLIER - Fleur LAURENS
  * @version 1.0 - 07/04/2020
+ * Permet de mettre deux films à la suite
  */
+
 public class Collage implements Film{
     private Film film1;
     private Film film2;
@@ -40,9 +42,9 @@ public class Collage implements Film{
      * @see Film#suivante(char[][])
      */
     @Override
-    public boolean suivante(char[][] écran) {
-        if(!film1.suivante(écran))
-            return film2.suivante(écran);
+    public boolean suivante(char[][] ecran) {
+        if(!film1.suivante(ecran))
+            return film2.suivante(ecran);
         return true;
     }
 

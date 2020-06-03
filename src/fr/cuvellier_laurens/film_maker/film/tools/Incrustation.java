@@ -1,17 +1,19 @@
-package fr.cuvellier.film_maker.film.tools;
+package fr.cuvellier_laurens.film_maker.film.tools;
 
-import fr.cuvellier.film_maker.film.Film;
-import fr.cuvellier.film_maker.film.Films;
+import fr.cuvellier_laurens.film_maker.film.Film;
+import fr.cuvellier_laurens.film_maker.film.Films;
 
 /**
- * @author Sebastien CUVELLIER
- * @version 4.0 - 03/05/2020
+ * @author Sebastien CUVELLIER - Fleur LAURENS
+ * @version 4.0 - 27/05/2020
+ * Permet d'incruster un Film dans un autre Film
  */
-public class Incrustation implements Film {
+public class Incrustation implements Film{
     private Film filmBase;
     private Film filmAIncruster;
     private int colone;
     private int ligne;
+    private boolean filmVide = false;
 
     /**
      *
@@ -23,8 +25,9 @@ public class Incrustation implements Film {
     public Incrustation(Film filmBase, Film filmAIncruster, int colone, int ligne) {
         this.filmBase = new Copie(filmBase);
         this.filmAIncruster = new Copie(filmAIncruster);
-        this.colone = colone;
-        this.ligne = ligne;
+        this.colone = Math.max(colone, 0);
+        this.ligne = Math.max(ligne, 0);
+        testerFilmVide();
     }
 
     /**
@@ -47,26 +50,31 @@ public class Incrustation implements Film {
      * @see Film#suivante(char[][])
      */
     @Override
-    public boolean suivante(char[][] écran) {
+    public boolean suivante(char[][] ecran) {
+        if (filmVide)
+            return filmBase.suivante(ecran);
+
         char[][] sousEcran1 = new char[this.filmBase.hauteur()][this.filmBase.largeur()];
         char[][] sousEcran2 = new char[this.filmAIncruster.hauteur()][this.filmAIncruster.largeur()];
 
         Films.effacer(sousEcran1);
         Films.effacer(sousEcran2);
-        Films.effacer(écran);
+        Films.effacer(ecran);
         boolean retourSuivant = this.filmBase.suivante(sousEcran1);
         filmAIncruster.suivante(sousEcran2);
         if (retourSuivant){
             for (int i = 0; i < hauteur(); ++i)
-                for (int j = 0; j < largeur(); ++j)
-                    if (i >= this.ligne && j >= this.colone && i - this.ligne +1 <= this.filmAIncruster.hauteur() && j - this.colone + 1<= this.filmAIncruster.largeur()){
+                for (int j = 0; j < largeur(); ++j){
+                    if (i >= this.ligne && j >= this.colone && i - this.ligne +1 <= this.filmAIncruster.hauteur() && j - this.colone + 1 <= this.filmAIncruster.largeur()){
                         if ( i - this.ligne  < sousEcran2.length && j - this.colone < sousEcran2[i - this.ligne].length ){
-                            écran[i][j] = sousEcran2[i - this.ligne][j - this.colone];
+                            ecran[i][j] = sousEcran2[i - this.ligne][j - this.colone];
                         }
                     }
                     else
                     if( i < sousEcran1.length && j < sousEcran1[i].length )
-                        écran[i][j] = sousEcran1[i][j];
+                        ecran[i][j] = sousEcran1[i][j];
+                }
+
         }
         return retourSuivant;
     }
@@ -79,4 +87,22 @@ public class Incrustation implements Film {
         filmBase.rembobiner();
         filmAIncruster.rembobiner();
     }
+
+    private void testerFilmVide(){
+        //on verifie si le film est vide
+        char[][] Ecran = new char[this.filmAIncruster.hauteur()][this.filmAIncruster.largeur()];
+        Films.effacer(Ecran);
+        filmAIncruster.suivante(Ecran);
+        boolean test = false;
+        for (char[] images : Ecran)
+            for (char image : images)
+                if (image != ' ') {
+                    test = true;
+                    break;
+                }
+        if(!test)
+            filmVide = true;
+        filmAIncruster.rembobiner();
+    }
+
 }

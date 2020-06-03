@@ -1,4 +1,4 @@
-package fr.cuvellier.film_maker.film;
+package fr.cuvellier_laurens.film_maker.film;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -7,6 +7,7 @@ import java.util.Arrays;
 /**
  * @version 1.0 - 13/02/2020
  * @author Denis Poitrenaud
+ * Ensemble de méthode static permetant d'operer sur des Film
  */
 public class Films {
     /**
@@ -15,11 +16,11 @@ public class Films {
      * @param f Le film devant être projeté.
      */
     public static void projeter(Film f) {
-        char[][] écran = getEcran(f);
-        while (f.suivante(écran)) {
-            System.out.println(toString(écran));
+        char[][] ecran = getEcran(f);
+        while (f.suivante(ecran)) {
+            System.out.println(toString(ecran));
             pause(1. / 12);
-            effacer(écran);
+            effacer(ecran);
         }
     }
 
@@ -31,44 +32,44 @@ public class Films {
      */
     public static void sauvegarder(Film f, String nom) throws FileNotFoundException {
         try (PrintWriter out = new PrintWriter(nom)) {
-            char[][] écran = getEcran(f);
+            char[][] ecran = getEcran(f);
             out.println(f.largeur() + " " + f.hauteur());
-            while (f.suivante(écran)) {
-                out.println(toString(écran));
+            while (f.suivante(ecran)) {
+                out.println(toString(ecran));
                 out.println("\\newframe");
-                effacer(écran);
+                effacer(ecran);
             }
         }
     }
 
     /**
-     * Construit un écran adapté à la projection d'un film.
-     * @param f Le film pour lequel un écran doit être constuit.
-     * @return L'écran adapté au film.
+     * Construit un ecran adapté à la projection d'un film.
+     * @param f Le film pour lequel un ecran doit être constuit.
+     * @return L'ecran adapté au film.
      */
     public static char[][] getEcran(Film f) {
-        char[][] écran = new char[f.hauteur()][f.largeur()];
-        effacer(écran);
-        return écran;
+        char[][] ecran = new char[f.hauteur()][f.largeur()];
+        effacer(ecran);
+        return ecran;
     }
 
     /**
-     * Efface un écran.
-     * @param écran L'écran à effacer
+     * Efface un ecran.
+     * @param ecran L'ecran à effacer
      */
-    public static void effacer(char[][] écran) {
-        for (char[] ligne : écran)
+    public static void effacer(char[][] ecran) {
+        for (char[] ligne : ecran)
             Arrays.fill(ligne, ' ');
     }
 
     /**
-     * Convertit en chaine de caractère un écran.
-     * @param écran L'écran à convertir
-     * @return La chaine correspondante à l'écran.
+     * Convertit en chaine de caractère un ecran.
+     * @param ecran L'ecran à convertir
+     * @return La chaine correspondante à l'ecran.
      */
-    public static String toString(char[][] écran) {
+    public static String toString(char[][] ecran) {
         StringBuilder s = new StringBuilder();
-        for (char[] ligne : écran)
+        for (char[] ligne : ecran)
             s.append(new String(ligne)).append(System.lineSeparator());
         return s.toString();
     }

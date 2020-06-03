@@ -1,6 +1,6 @@
-package fr.cuvellier.film_maker.film.optional;
+package fr.cuvellier_laurens.film_maker.film.optional;
 
-import fr.cuvellier.film_maker.film.Film;
+import fr.cuvellier_laurens.film_maker.film.Film;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,8 +9,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * @author Sebastien CUVELLIER
+ * @author Sebastien CUVELLIER - Fleur LAURENS
  * @version 2.3 - 08/04/2020
+ * Permet de convertir un fichier txt en Film
  */
 public class TextFileInterpreter implements Film {
     private ArrayList<String[]> images;
@@ -65,12 +66,12 @@ public class TextFileInterpreter implements Film {
      * @see Film#suivante(char[][])
      */
     @Override
-    public boolean suivante(char[][] écran) {
+    public boolean suivante(char[][] ecran) {
         if (images.isEmpty())
             return false;
         for (int i = 0; i < this.images.get(0).length - this.marge; ++i) {
             char[] chars = this.images.get(0)[i].toCharArray();
-            écran[i] = chars;
+            ecran[i] = chars;
         }
         this.images.remove(0);
         return true;

@@ -1,16 +1,16 @@
-package fr.cuvellier.film_maker.film.tools;
+package fr.cuvellier_laurens.film_maker.film.tools;
 
-import fr.cuvellier.film_maker.film.Film;
-import fr.cuvellier.film_maker.film.Films;
+import fr.cuvellier_laurens.film_maker.film.Film;
+import fr.cuvellier_laurens.film_maker.film.Films;
 
 import java.util.ArrayList;
 
 /**
- * @author Sebastien CUVELLIER
+ * @author Sebastien CUVELLIER - Fleur LAURENS
  * @version 1.0 - 08/05/2020
  * Permet de faire une copie profonde de d'un Film
  */
-public class Copie implements Film {
+public class Copie implements Film{
     private ArrayList<char[][]> images;
     private Film film;
     private int img;
@@ -48,11 +48,11 @@ public class Copie implements Film {
      * @see Film#suivante(char[][]) ()
      */
     @Override
-    public boolean suivante(char[][] écran) {
+    public boolean suivante(char[][] ecran) {
         if (this.img >= this.images.size())
             return false;
         for(int i = 0; i< this.images.get(this.img).length; ++i)
-            System.arraycopy(this.images.get(this.img)[i], 0, écran[i], 0, this.images.get(this.img)[i].length);
+            System.arraycopy(this.images.get(this.img)[i], 0, ecran[i], 0, this.images.get(this.img)[i].length);
         ++this.img;
         return true;
     }

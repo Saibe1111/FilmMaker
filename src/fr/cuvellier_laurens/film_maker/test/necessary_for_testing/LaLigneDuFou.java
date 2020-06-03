@@ -1,28 +1,28 @@
-package fr.cuvellier.film_maker.test.necessary_for_testing;
+package fr.cuvellier_laurens.film_maker.test.necessary_for_testing;
 
-import fr.cuvellier.film_maker.film.Film;
-import fr.cuvellier.film_maker.film.Films;
+import fr.cuvellier_laurens.film_maker.film.Film;
+import fr.cuvellier_laurens.film_maker.film.Films;
 
 import java.io.FileNotFoundException;
 
 /**
- * @version 2.0 - 28/04/2020
- * @author Denis Poitrenaud, Sébastien CUVELLIER
+ * @version 1.0 - 28/04/2020
+ * @author Sébastien CUVELLIER - Fleur LAURENS
  */
-public class LaDiagonaleDuFou implements Film {
+public class LaLigneDuFou implements Film {
     private int num = 0;
-    private static final int NB_IMAGES = 4;
+    private static final int NB_IMAGES = 2;
 
     /**
      * @see Film#hauteur()
      */
     @Override
     public int hauteur() {
-        return 4;
+        return 2;
     }
 
     /**
-     * @see Film#largeur() 
+     * @see Film#largeur()
      */
     @Override
     public int largeur() {
@@ -33,10 +33,10 @@ public class LaDiagonaleDuFou implements Film {
      * @see Film#suivante(char[][])
      */
     @Override
-    public boolean suivante(char[][] écran) {
+    public boolean suivante(char[][] ecran) {
         if (num == NB_IMAGES)
             return false;
-        écran[num % hauteur()][num % hauteur()] = 'a'; // un 'a' se balade sur
+        ecran[0][num] = 'a'; // un 'a' se balade sur
         // la diagonale
         ++num;
         return true;
@@ -50,9 +50,8 @@ public class LaDiagonaleDuFou implements Film {
         num = 0;
     }
 
-
     public static void main(String[] args) {
-        Film film = new LaDiagonaleDuFou();
+        Film film = new LaLigneDuFou();
         Films.projeter(film);
         film.rembobiner();
         try {

@@ -2,7 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf52cac8-9fa0-4a0c-8524-79bfb0e18dc9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Sebastien.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Sebastien.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilmMaker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FilmMaker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decompte.txt" beforeDir="false" afterPath="$PROJECT_DIR$/decompte.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duke-cm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/duke-cm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euler-house.txt" beforeDir="false" afterPath="$PROJECT_DIR$/euler-house.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fou.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fou.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gym.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/joconde-anim.txt" beforeDir="false" afterPath="$PROJECT_DIR$/joconde-anim.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marche.txt" beforeDir="false" afterPath="$PROJECT_DIR$/marche.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Films.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/Films.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/optional/TextFileInterpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Collage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Collage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Copie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Copie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Encadrement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Encadrement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Extrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Extrait.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Incrustation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Incrustation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Répétition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/film/tools/Répétition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/necessary_for_testing/LaDiagonaleDuFou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/necessary_for_testing/LaDiagonaleDuFou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/necessary_for_testing/LaLigneDuFou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/necessary_for_testing/LaLigneDuFou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/CollageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/CollageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/CopieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/CopieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/EncadrementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/EncadrementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/ExtraitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/ExtraitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/IncrustationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/IncrustationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/RépétitionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/cuvellier/film_maker/test/tools/RépétitionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +69,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -47,14 +80,16 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -69,7 +104,7 @@
       <recent name="E:\JAVA\git\FilmMaker\src\fr\cuvellier\film_maker\film" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Encadrement">
+  <component name="RunManager" selected="JUnit.CollageTest">
     <configuration name="Encadrement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.film.tools.Encadrement" />
       <module name="FilmMaker" />
@@ -96,6 +131,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CollageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FilmMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.cuvellier.film_maker.test.tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test.tools" />
+      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.tools.CollageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CopieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FilmMaker" />
       <extension name="coverage">
@@ -107,22 +157,6 @@
       <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test.tools" />
       <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.tools.CopieTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CopieTest.rembobiner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FilmMaker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.cuvellier.film_maker.test.tools.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.cuvellier.film_maker.test.tools" />
-      <option name="MAIN_CLASS_NAME" value="fr.cuvellier.film_maker.test.tools.CopieTest" />
-      <option name="METHOD_NAME" value="rembobiner" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CollageTest" />
         <item itemvalue="Application.Encadrement" />
         <item itemvalue="Application.Encadrer" />
         <item itemvalue="JUnit.EncadrementTest" />
         <item itemvalue="JUnit.CopieTest" />
-        <item itemvalue="JUnit.CopieTest.rembobiner" />
       </list>
     </recent_temporary>
   </component>
@@ -162,8 +196,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586000839359</updated>
+      <workItem from="1590527782061" duration="16000" />
+      <workItem from="1590577184962" duration="2000" />
+      <workItem from="1590585682887" duration="2000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -195,19 +235,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="751" y="390" width="421" height="259" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1589063980735" />
-    <state x="716" y="57" width="635" height="925" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588754601983">
+    <state x="716" y="57" width="635" height="925" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590392407018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="716" y="57" width="635" height="925" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588754601983" />
+    <state x="716" y="57" width="635" height="925" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590392407018" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589143110997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589143110997" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1589382093585">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1590392462233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="416" y="497" key="FileChooserDialogImpl/0.0.1080.1880@0.0.1080.1880" timestamp="1588463007727" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589382093585" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590392462233" />
     <state width="1347" height="95" key="GridCell.Tab.0.bottom" timestamp="1589143444638">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -248,10 +288,10 @@
     </state>
     <state width="1037" height="662" key="GridCell.Tab.1.right/0.0.1080.1880@0.0.1080.1880" timestamp="1586362115121" />
     <state width="1877" height="326" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588755094816" />
-    <state x="490" y="202" width="1085" height="715" key="SettingsEditor" timestamp="1588889580956">
+    <state x="490" y="202" width="1085" height="715" key="SettingsEditor" timestamp="1590392382356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="202" width="1085" height="715" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588889580956" />
+    <state x="490" y="202" width="1085" height="715" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590392382356" />
     <state x="261" y="681" width="540" height="540" key="StructurePopup" timestamp="1586122118692">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
@@ -288,12 +328,12 @@
     <SUITE FILE_PATH="coverage/FilmMaker$TextFileInterpreterTest_mainTEST.ic" NAME="TextFileInterpreterTest.mainTEST Coverage Results" MODIFIED="1586214621743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>fr.cuvellier.film_maker.test.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/FilmMaker$CollageTest.ic" NAME="CollageTest Coverage Results" MODIFIED="1589063880360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>fr.cuvellier.film_maker.test.tools.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/FilmMaker$CopieTest_and_5_more.ic" NAME="CopieTest and 5 more Coverage Results" MODIFIED="1589063909383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/FilmMaker$TextFileInterpreterTest.ic" NAME="TextFileInterpreterTest Coverage Results" MODIFIED="1586214748693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>fr.cuvellier.film_maker.film.optional.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/FilmMaker$CollageTest.ic" NAME="CollageTest Coverage Results" MODIFIED="1589063880360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>fr.cuvellier.film_maker.test.tools.*</FILTER>
     </SUITE>
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
